@@ -1,0 +1,115 @@
+/* Flowchart Steps */
+.flowchart {
+  margin: 3rem 0;
+}
+
+.flow-stage {
+  background: rgba(6, 9, 26, 0.8);
+  border: 1px solid rgba(0, 229, 255, 0.12);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.flow-stage::after {
+  content: '↓';
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--cyan);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.flow-stage:last-child::after {
+  display: none;
+}
+
+.stage-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(0, 229, 255, 0.15);
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.stage-title {
+  color: var(--cyan);
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+}
+
+.stage-question {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.stage-paths {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stage-path {
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.stage-path.no {
+  background: rgba(255, 68, 68, 0.1);
+  border: 1px solid rgba(255, 68, 68, 0.3);
+  color: #ffaaaa;
+}
+
+.stage-path.yes {
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  color: #aaffcc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flowchart {
+    margin: 2rem 0;
+  }
+  
+  .flow-stage {
+    padding: 1.5rem;
+  }
+  
+  .stage-number {
+    font-size: 2rem;
+    top: 0.5rem;
+    right: 1rem;
+  }
+  
+  .stage-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .stage-question {
+    font-size: 1rem;
+  }
+  
+  .stage-paths {
+    grid-template-columns: 1fr;
+  }
+  
+  .stage-path {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+}

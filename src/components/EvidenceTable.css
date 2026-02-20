@@ -1,0 +1,87 @@
+/* Evidence Categories */
+.evidence-categories {
+  margin: 1.5rem 0;
+}
+
+.evidence-categories li {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+/* Experiments Grid */
+.experiments-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.experiment-card {
+  background: rgba(6, 9, 26, 0.8);
+  border: 1px solid rgba(0, 229, 255, 0.08);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.experiment-card:hover {
+  border-color: rgba(0, 229, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 229, 255, 0.1);
+}
+
+.experiment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.experiment-title {
+  font-weight: 600;
+  color: var(--cyan);
+  font-size: 1.1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  flex: 1;
+}
+
+.experiment-measurements {
+  font-size: 0.85rem;
+  color: rgba(136, 146, 176, 0.8);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.experiment-outcome {
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .experiment-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .experiment-title {
+    font-size: 1rem;
+  }
+  
+  .experiment-measurements {
+    font-size: 0.8rem;
+  }
+  
+  .experiment-outcome {
+    font-size: 0.85rem;
+  }
+  
+  .evidence-categories li {
+    font-size: 0.9rem;
+  }
+}

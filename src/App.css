@@ -1,42 +1,100 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* App-specific styles */
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Responsive layout */
+@media (max-width: 1200px) {
+  .app {
+    flex-direction: column;
+  }
+}
+
+/* Section styling */
+section {
+  margin-bottom: 4rem;
+}
+
+section:last-child {
+  margin-bottom: 2rem;
+}
+
+/* Lists */
+ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul.no-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.no-bullets li {
+  margin-bottom: 0.8rem;
+}
+
+/* Grid layouts */
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Text utilities */
+.text-center {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.text-gray {
+  color: var(--gray);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-cyan {
+  color: var(--cyan);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.font-weight-500 {
+  font-weight: 500;
 }
 
-.card {
-  padding: 2em;
+.font-weight-600 {
+  font-weight: 600;
 }
 
-.read-the-docs {
-  color: #888;
+.font-weight-700 {
+  font-weight: 700;
+}
+
+/* Spacing utilities */
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
 }
