@@ -12,7 +12,9 @@ import Models from './components/Models'
 import Expectations from './components/Expectations'
 import DecisiveExperiments from './components/DecisiveExperiments'
 import ReactorDiagrams from './components/ReactorDiagrams'
+import CTA from './components/CTA'
 import References from './components/References'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -31,7 +33,9 @@ function App() {
             <Expectations />
             <DecisiveExperiments />
             <ReactorDiagrams />
+            <CTA />
             <References />
+            <Footer />
           </main>
         </div>
       </Router>
