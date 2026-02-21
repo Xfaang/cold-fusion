@@ -58,7 +58,7 @@
   }
   
   .timeline::before {
-    left: 15px;
+    left: 14px;
   }
   
   .timeline-item {
@@ -69,6 +69,7 @@
     left: 6px;
     width: 16px;
     height: 16px;
+    top: 0.4rem;
   }
   
   .timeline-year {

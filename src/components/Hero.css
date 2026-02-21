@@ -56,7 +56,8 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero {
-    padding: 4rem 1.5rem 3rem;
+    padding: 5rem 1.5rem 3rem;
+    margin-top: 3.5rem;
   }
   
   .hero .subtitle {
