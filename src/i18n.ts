@@ -172,6 +172,10 @@ export const translations = {
     
     // References section
     referencesTitle: "Źródła",
+    fullResearchLink: "Przeczytaj pełne, nieokrojone badanie →",
+    
+    // Full research page
+    backToMain: "Powrót do strony głównej",
     
     // Language toggle
     languageSwitch: "Język",
@@ -371,6 +375,10 @@ export const translations = {
     
     // References section
     referencesTitle: "References",
+    fullResearchLink: "Read the full unabridged research →",
+    
+    // Full research page
+    backToMain: "Back to main page",
     
     // Language toggle
     languageSwitch: "Language",

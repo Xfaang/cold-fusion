@@ -1,4 +1,5 @@
 import { useLanguage } from '../LanguageContext'
+import { Link } from 'react-router-dom'
 import './References.css'
 
 interface Reference {
@@ -233,6 +234,12 @@ const References = () => {
           ))}
         </div>
       ))}
+      
+      <div className="full-research-link-container">
+        <Link to="/full-research" className="full-research-link">
+          {t('fullResearchLink')}
+        </Link>
+      </div>
     </section>
   )
 }

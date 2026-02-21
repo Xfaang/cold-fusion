@@ -1,4 +1,4 @@
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import { LanguageProvider } from './LanguageContext'
 import LanguageToggle from './components/LanguageToggle'
@@ -15,29 +15,37 @@ import ReactorDiagrams from './components/ReactorDiagrams'
 import CTA from './components/CTA'
 import References from './components/References'
 import Footer from './components/Footer'
+import FullResearch from './components/FullResearch'
+
+const MainPage = () => (
+  <div className="app">
+    <LanguageToggle />
+    <Sidebar />
+    <main className="main-content">
+      <Hero />
+      <Introduction />
+      <Timeline />
+      <Reproducibility />
+      <EvidenceTable />
+      <Models />
+      <Expectations />
+      <DecisiveExperiments />
+      <ReactorDiagrams />
+      <CTA />
+      <References />
+      <Footer />
+    </main>
+  </div>
+)
 
 function App() {
   return (
     <LanguageProvider>
       <Router>
-        <div className="app">
-          <LanguageToggle />
-          <Sidebar />
-          <main className="main-content">
-            <Hero />
-            <Introduction />
-            <Timeline />
-            <Reproducibility />
-            <EvidenceTable />
-            <Models />
-            <Expectations />
-            <DecisiveExperiments />
-            <ReactorDiagrams />
-            <CTA />
-            <References />
-            <Footer />
-          </main>
-        </div>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/full-research" element={<FullResearch />} />
+        </Routes>
       </Router>
     </LanguageProvider>
   )
