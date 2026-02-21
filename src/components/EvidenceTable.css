@@ -48,6 +48,17 @@
   flex: 1;
 }
 
+.experiment-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.experiment-title a:hover {
+  color: rgba(0, 229, 255, 0.9);
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+}
+
 .experiment-measurements {
   font-size: 0.85rem;
   color: rgba(136, 146, 176, 0.8);
