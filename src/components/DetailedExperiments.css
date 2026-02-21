@@ -1,0 +1,212 @@
+.experiments-grid-detailed {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.experiment-card-detailed {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.experiment-card-detailed:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.experiment-card-detailed.expanded {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.experiment-header-detailed {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.experiment-title-detailed {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.3;
+  flex: 1;
+}
+
+.experiment-title-detailed a {
+  color: #87CEEB;
+  text-decoration: none;
+}
+
+.experiment-title-detailed a:hover {
+  text-decoration: underline;
+}
+
+.experiment-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.experiment-badges .confidence {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.experiment-badges .category {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #E0E0E0;
+}
+
+.experiment-meta {
+  margin-bottom: 1rem;
+}
+
+.authors {
+  font-size: 0.9rem;
+  color: #B0B0B0;
+  margin-bottom: 0.3rem;
+  font-style: italic;
+}
+
+.journal-year {
+  font-size: 0.85rem;
+  color: #90CAF9;
+}
+
+.journal {
+  font-weight: 500;
+}
+
+.year {
+  color: #A0A0A0;
+  margin-left: 0.5rem;
+}
+
+.experiment-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-section {
+  margin-bottom: 1.5rem;
+}
+
+.detail-section h4 {
+  color: #87CEEB;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.detail-section p {
+  color: #E0E0E0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.technical-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tech-detail h5 {
+  color: #FFA726;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tech-detail ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-detail li {
+  color: #D0D0D0;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.tech-detail li::before {
+  content: "•";
+  color: #81C784;
+  position: absolute;
+  left: 0;
+}
+
+.tech-detail.conditions li strong {
+  color: #FFCC80;
+  margin-right: 0.5rem;
+}
+
+.click-indicator {
+  margin-top: 1rem;
+  text-align: center;
+  color: #A0A0A0;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.confidence.high {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.confidence.medium {
+  background-color: #FF9800;
+  color: white;
+}
+
+.confidence.low {
+  background-color: #F44336;
+  color: white;
+}
+
+.confidence.very-low {
+  background-color: #9C27B0;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .experiment-header-detailed {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .experiment-badges {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .technical-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .experiment-title-detailed {
+    font-size: 1.1rem;
+  }
+}

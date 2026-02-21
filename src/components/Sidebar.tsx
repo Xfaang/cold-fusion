@@ -111,6 +111,15 @@ const Sidebar = () => {
           </li>
           <li>
             <a 
+              href="#detailed-experiments"
+              className={activeSection === 'detailed-experiments' ? 'active' : ''}
+              onClick={(e) => handleLinkClick(e, '#detailed-experiments')}
+            >
+              Detailed Experiments
+            </a>
+          </li>
+          <li>
+            <a 
               href="#models"
               className={activeSection === 'models' ? 'active' : ''}
               onClick={(e) => handleLinkClick(e, '#models')}

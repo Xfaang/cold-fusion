@@ -8,6 +8,7 @@ import Introduction from './components/Introduction'
 import Timeline from './components/Timeline'
 import Reproducibility from './components/Reproducibility'
 import EvidenceTable from './components/EvidenceTable'
+import DetailedExperiments from './components/DetailedExperiments'
 import Models from './components/Models'
 import Expectations from './components/Expectations'
 import DecisiveExperiments from './components/DecisiveExperiments'
@@ -27,6 +28,7 @@ const MainPage = () => (
       <Timeline />
       <Reproducibility />
       <EvidenceTable />
+      <DetailedExperiments />
       <Models />
       <Expectations />
       <DecisiveExperiments />
