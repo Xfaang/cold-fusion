@@ -14,7 +14,7 @@ A comprehensive, open-source research compilation on cold fusion and Low Energy 
 
 ## 📸 Screenshots
 
-![Cold Fusion Research App Screenshot](screenshot-placeholder.png)
+![Cold Fusion Research App Screenshot](screenshot.png)
 *Interactive timeline and evidence analysis of cold fusion research*
 
 ## ✨ Features
