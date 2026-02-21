@@ -10,7 +10,7 @@ A comprehensive, open-source research compilation on cold fusion and Low Energy 
 ## 🚀 Live Demo
 
 - **Polish**: [https://www.zimnafuzja.pl](https://www.zimnafuzja.pl)
-- **English**: [https://www.cold-fusion.org](https://www.cold-fusion.org) *(coming soon)*
+- **English**: [https://www.cold-fusion.org](https://www.cold-fusion.org)
 
 ## 📸 Screenshots
 
