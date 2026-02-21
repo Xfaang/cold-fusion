@@ -16,16 +16,53 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  // Default to Polish as requested
-  const [language, setLanguageState] = useState<Language>('pl');
+  // Helper function to get URL parameters
+  const getUrlParam = (param: string): string | null => {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  };
 
-  useEffect(() => {
-    // Load saved language preference from localStorage
+  // Helper function to detect browser language
+  const detectBrowserLanguage = (): Language => {
+    const browserLang = navigator.language || navigator.languages?.[0];
+    if (browserLang && browserLang.toLowerCase().startsWith('en')) {
+      return 'en';
+    }
+    return 'pl'; // Default to Polish for any other language
+  };
+
+  // Helper function to determine initial language based on priority
+  const determineInitialLanguage = (): Language => {
+    // Priority 1: URL parameter
+    const urlLang = getUrlParam('lang');
+    if (urlLang === 'en' || urlLang === 'pl') {
+      return urlLang as Language;
+    }
+
+    // Priority 2: localStorage
     const savedLanguage = localStorage.getItem('coldFusion_language') as Language;
     if (savedLanguage && (savedLanguage === 'pl' || savedLanguage === 'en')) {
-      setLanguageState(savedLanguage);
+      return savedLanguage;
     }
-  }, []);
+
+    // Priority 3: Browser language detection
+    return detectBrowserLanguage();
+  };
+
+  const [language, setLanguageState] = useState<Language>(determineInitialLanguage());
+
+  useEffect(() => {
+    // Check for URL parameter and update language if found
+    const urlLang = getUrlParam('lang');
+    if (urlLang === 'en' || urlLang === 'pl') {
+      const langParam = urlLang as Language;
+      if (language !== langParam) {
+        setLanguageState(langParam);
+        // Update localStorage when URL param is used
+        localStorage.setItem('coldFusion_language', langParam);
+      }
+    }
+  }, [language]);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
