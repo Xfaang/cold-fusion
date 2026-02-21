@@ -217,7 +217,7 @@ export const translations = {
     evidenceInventory: "Evidence Inventory",
     keyExperiments: "Key Experiments",
     modelsAndCritiques: "Models and Critiques",
-    whatToExpected: "What to Expect",
+    whatToExpect: "What to Expect",
     decisiveExperiments: "Decisive Experiments",
     experimentalFlowchart: "Experimental Flowchart",
     reactorSchematics: "Reactor Schematics",
