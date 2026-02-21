@@ -10,8 +10,7 @@
   left: 21px;
   top: 0;
   bottom: 0;
-  width: 2px;
-  transform: translateX(-50%);
+  width: 1px;
   background: linear-gradient(
     to bottom, 
     var(--cyan), 
@@ -28,10 +27,10 @@
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: 22px;
+  left: 21px;
   top: 0.5rem;
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   transform: translateX(-50%);
   background: var(--cyan);
   border-radius: 50%;
@@ -61,7 +60,7 @@
   
   .timeline::before {
     left: 15px;
-    transform: translateX(-50%);
+    width: 1px;
   }
   
   .timeline-item {
@@ -69,9 +68,9 @@
   }
   
   .timeline-item::before {
-    left: 16px;
-    width: 16px;
-    height: 16px;
+    left: 15px;
+    width: 15px;
+    height: 15px;
     top: 0.4rem;
     transform: translateX(-50%);
   }
