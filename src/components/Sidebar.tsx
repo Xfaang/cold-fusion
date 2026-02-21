@@ -3,7 +3,7 @@ import { useLanguage } from '../LanguageContext'
 import './Sidebar.css'
 
 const Sidebar = () => {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const [activeSection, setActiveSection] = useState('')
   const [isOpen, setIsOpen] = useState(false)
 
@@ -167,6 +167,12 @@ const Sidebar = () => {
           </li>
         </ul>
         <div style={{ marginTop: '2rem', paddingTop: '1rem', borderTop: '1px solid rgba(0,229,255,0.1)' }}>
+          <a 
+            href="/full-research"
+            style={{ color: '#f0f4ff', textDecoration: 'none', fontSize: '0.85rem', display: 'block', padding: '0.3rem 0' }}
+          >
+            {language === 'pl' ? 'Pełny Raport Badawczy' : 'Full Research Report'} →
+          </a>
           <a 
             href="https://xavier.xfaang.com/cold-fusion" 
             target="_blank" 

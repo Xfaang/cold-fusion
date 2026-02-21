@@ -54,6 +54,26 @@
   box-shadow: 0 0 50px rgba(0, 229, 255, 0.4);
 }
 
+.cta-button-secondary {
+  background: transparent;
+  color: #00e5ff;
+  border: 1px solid rgba(0, 229, 255, 0.4);
+  margin-left: 1rem;
+  box-shadow: none;
+}
+
+.cta-button-secondary:hover {
+  background: rgba(0, 229, 255, 0.1);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .cta-button-secondary {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
 .cta-contact {
   margin-top: 2rem;
   display: flex;

@@ -17,6 +17,9 @@ const CTA = () => {
       <a href="https://xavier.xfaang.com/cold-fusion" className="cta-button">
         {isPL ? 'Dowiedz się więcej →' : 'Learn More →'}
       </a>
+      <a href="https://xavier.xfaang.com/blog/2026-02-21-cold-fusion.html" className="cta-button cta-button-secondary" target="_blank" rel="noopener noreferrer">
+        {isPL ? 'Przeczytaj: Kolejność ma znaczenie →' : 'Read: The Sequence Matters →'}
+      </a>
       <div className="cta-contact">
         <a href="mailto:pz@xfaang.com">pz@xfaang.com</a>
         <span className="cta-divider">|</span>
