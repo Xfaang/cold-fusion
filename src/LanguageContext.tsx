@@ -22,6 +22,14 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     return urlParams.get(param);
   };
 
+  // Helper function to detect language from hostname
+  const detectHostLanguage = (): Language | null => {
+    const hostname = window.location.hostname;
+    if (hostname.includes('zimnafuzja.pl')) return 'pl';
+    if (hostname.includes('cold-fusion.org')) return 'en';
+    return null;
+  };
+
   // Helper function to detect browser language
   const detectBrowserLanguage = (): Language => {
     const browserLang = navigator.language || navigator.languages?.[0];
@@ -39,13 +47,24 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       return urlLang as Language;
     }
 
-    // Priority 2: localStorage
+    // Priority 2: Hostname detection (zimnafuzja.pl = PL, cold-fusion.org = EN)
+    const hostLang = detectHostLanguage();
+    if (hostLang) {
+      // Only check localStorage if user explicitly changed language on this domain
+      const savedLanguage = localStorage.getItem('coldFusion_language') as Language;
+      if (savedLanguage && (savedLanguage === 'pl' || savedLanguage === 'en')) {
+        return savedLanguage;
+      }
+      return hostLang;
+    }
+
+    // Priority 3: localStorage (for other domains like localhost)
     const savedLanguage = localStorage.getItem('coldFusion_language') as Language;
     if (savedLanguage && (savedLanguage === 'pl' || savedLanguage === 'en')) {
       return savedLanguage;
     }
 
-    // Priority 3: Browser language detection
+    // Priority 4: Browser language detection
     return detectBrowserLanguage();
   };
 
