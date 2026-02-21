@@ -22,10 +22,10 @@ export const translations = {
     partnership: "Współpraca",
     
     // Confidence badges
-    confidenceHigh: "Wysoka",
-    confidenceMedium: "Średnia",
-    confidenceLow: "Niska",
-    confidenceVeryLow: "Bardzo Niska",
+    confidenceHigh: "Pewność: Wysoka",
+    confidenceMedium: "Pewność: Średnia",
+    confidenceLow: "Pewność: Niska",
+    confidenceVeryLow: "Pewność: Bardzo Niska",
     
     // Introduction content
     introContent1: "Zimna fuzja (LENR) odnosi się do twierdzeń o energii o skali jądrowej w układach materii skondensowanej w temperaturze otoczenia. Dobrze kontrolowane replikacje nie wykazują silnej produkcji energii netto. Część badań donosi o przerywanym nadmiarze ciepła. Ponowna ocena Nature z 2019 roku nie znalazła dowodów. Nature z 2025 roku poinformował, że elektrochemiczne ładowanie zwiększyło wydajność neutronów z fuzji D-D o ~15%.",
@@ -225,10 +225,10 @@ export const translations = {
     partnership: "Partnership",
     
     // Confidence badges
-    confidenceHigh: "High",
-    confidenceMedium: "Medium",
-    confidenceLow: "Low",
-    confidenceVeryLow: "Very Low",
+    confidenceHigh: "Confidence: High",
+    confidenceMedium: "Confidence: Medium",
+    confidenceLow: "Confidence: Low",
+    confidenceVeryLow: "Confidence: Very Low",
     
     // Introduction content
     introContent1: "Cold fusion (LENR) refers to claims of nuclear-scale energy in condensed-matter systems at ambient temperatures. Well-controlled replications find no strong net energy production. A subset reports intermittent excess heat. 2019 Nature re-evaluation found no evidence. 2025 Nature reported electrochemical loading boosted D-D fusion neutron yield by ~15%.",
