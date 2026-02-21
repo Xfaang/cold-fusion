@@ -45,6 +45,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/full-research" element={<FullResearch />} />
+          <Route path="/caly-raport" element={<FullResearch />} />
         </Routes>
       </Router>
     </LanguageProvider>

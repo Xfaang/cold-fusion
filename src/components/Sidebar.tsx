@@ -168,7 +168,7 @@ const Sidebar = () => {
         </ul>
         <div style={{ marginTop: '2rem', paddingTop: '1rem', borderTop: '1px solid rgba(0,229,255,0.1)' }}>
           <a 
-            href="/full-research"
+            href={language === 'pl' ? '/caly-raport' : '/full-research'}
             style={{ color: '#f0f4ff', textDecoration: 'none', fontSize: '0.85rem', display: 'block', padding: '0.3rem 0' }}
           >
             {language === 'pl' ? 'Pełny Raport Badawczy' : 'Full Research Report'} →
