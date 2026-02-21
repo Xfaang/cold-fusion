@@ -211,60 +211,36 @@
   }
 
   .timeline-table {
-    display: block;
-    border: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    min-width: 0;
   }
 
   .timeline-row {
-    display: block;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: rgba(15, 23, 42, 0.5);
-  }
-
-  .timeline-row.header {
-    display: none;
+    display: contents;
   }
 
   .timeline-row > div {
-    display: block;
-    padding: 0.5rem 0;
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .timeline-row > div:last-child {
-    border-bottom: none;
+    white-space: nowrap;
+    min-width: 120px;
   }
 
   .experiments-table {
-    display: block;
-    border: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    min-width: 0;
   }
 
   .experiment-row {
-    display: block;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: rgba(15, 23, 42, 0.5);
-  }
-
-  .experiment-row.header {
-    display: none;
+    display: contents;
   }
 
   .experiment-row > div {
-    display: block;
-    padding: 0.5rem 0;
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .experiment-row > div:last-child {
-    border-bottom: none;
+    white-space: nowrap;
+    min-width: 120px;
   }
 }
