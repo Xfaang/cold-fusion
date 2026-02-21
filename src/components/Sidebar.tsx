@@ -55,7 +55,6 @@ const Sidebar = () => {
       <button
         className="toc-toggle"
         onClick={() => setIsOpen(!isOpen)}
-        style={{ display: window.innerWidth <= 1200 ? 'block' : 'none' }}
       >
         ☰
       </button>
