@@ -8,6 +8,19 @@
   padding-top: 2rem;
 }
 
+.reference-category {
+  margin-bottom: 3rem;
+}
+
+.reference-category-title {
+  color: var(--cyan);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+}
+
 .reference {
   margin-bottom: 1rem;
   padding: 1rem;

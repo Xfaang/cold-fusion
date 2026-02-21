@@ -19,6 +19,7 @@ export const translations = {
     experimentalFlowchart: "Schemat Eksperymentalny",
     reactorSchematics: "Schematy Reaktorów",
     references: "Źródła",
+    partnership: "Współpraca",
     
     // Confidence badges
     confidenceHigh: "Wysoka",
@@ -217,6 +218,7 @@ export const translations = {
     experimentalFlowchart: "Experimental Flowchart",
     reactorSchematics: "Reactor Schematics",
     references: "References",
+    partnership: "Partnership",
     
     // Confidence badges
     confidenceHigh: "High",

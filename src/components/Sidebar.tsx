@@ -167,6 +167,16 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
+        <div style={{ marginTop: '2rem', paddingTop: '1rem', borderTop: '1px solid rgba(0,229,255,0.1)' }}>
+          <a 
+            href="https://xavier.xfaang.com/cold-fusion" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ color: '#00e5ff', textDecoration: 'none', fontSize: '0.85rem', display: 'block', padding: '0.3rem 0' }}
+          >
+            {t('partnership')} →
+          </a>
+        </div>
       </nav>
     </>
   )
