@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
+import { useLanguage } from '../LanguageContext'
 import './Sidebar.css'
 
 const Sidebar = () => {
+  const { t } = useLanguage()
   const [activeSection, setActiveSection] = useState('')
   const [isOpen, setIsOpen] = useState(false)
 
@@ -59,7 +61,7 @@ const Sidebar = () => {
       </button>
       
       <nav className={`toc ${isOpen ? 'open' : ''}`}>
-        <h3>Contents</h3>
+        <h3>{t('contents')}</h3>
         <ul>
           <li>
             <a 
@@ -67,7 +69,7 @@ const Sidebar = () => {
               className={activeSection === 'introduction' ? 'active' : ''}
               onClick={(e) => handleLinkClick(e, '#introduction')}
             >
-              Introduction
+              {t('introduction')}
             </a>
           </li>
           <li>
@@ -76,7 +78,7 @@ const Sidebar = () => {
               className={activeSection === 'timeline' ? 'active' : ''}
               onClick={(e) => handleLinkClick(e, '#timeline')}
             >
-              Historical Timeline
+              {t('timeline')}
             </a>
           </li>
           <li>
@@ -85,7 +87,7 @@ const Sidebar = () => {
               className={activeSection === 'reproducibility' ? 'active' : ''}
               onClick={(e) => handleLinkClick(e, '#reproducibility')}
             >
-              Reproducibility
+              {t('reproducibility')}
             </a>
           </li>
           <li>
@@ -94,7 +96,7 @@ const Sidebar = () => {
               className={activeSection === 'evidence' ? 'active' : ''}
               onClick={(e) => handleLinkClick(e, '#evidence')}
             >
-              Evidence Inventory
+              {t('evidenceInventory')}
             </a>
             <ul>
               <li>
@@ -103,7 +105,7 @@ const Sidebar = () => {
                   className={activeSection === 'key-experiments' ? 'active' : ''}
                   onClick={(e) => handleLinkClick(e, '#key-experiments')}
                 >
-                  Key Experiments
+                  {t('keyExperiments')}
                 </a>
               </li>
             </ul>
@@ -114,7 +116,7 @@ const Sidebar = () => {
               className={activeSection === 'models' ? 'active' : ''}
               onClick={(e) => handleLinkClick(e, '#models')}
             >
-              Models and Critiques
+              {t('modelsAndCritiques')}
             </a>
           </li>
           <li>
@@ -123,7 +125,7 @@ const Sidebar = () => {
               className={activeSection === 'expectations' ? 'active' : ''}
               onClick={(e) => handleLinkClick(e, '#expectations')}
             >
-              What to Expect
+              {t('whatToExpect')}
             </a>
           </li>
           <li>
@@ -132,7 +134,7 @@ const Sidebar = () => {
               className={activeSection === 'experiments' ? 'active' : ''}
               onClick={(e) => handleLinkClick(e, '#experiments')}
             >
-              Decisive Experiments
+              {t('decisiveExperiments')}
             </a>
             <ul>
               <li>
@@ -141,7 +143,7 @@ const Sidebar = () => {
                   className={activeSection === 'flowchart' ? 'active' : ''}
                   onClick={(e) => handleLinkClick(e, '#flowchart')}
                 >
-                  Experimental Flowchart
+                  {t('experimentalFlowchart')}
                 </a>
               </li>
               <li>
@@ -150,7 +152,7 @@ const Sidebar = () => {
                   className={activeSection === 'schematics' ? 'active' : ''}
                   onClick={(e) => handleLinkClick(e, '#schematics')}
                 >
-                  Reactor Schematics
+                  {t('reactorSchematics')}
                 </a>
               </li>
             </ul>
@@ -161,7 +163,7 @@ const Sidebar = () => {
               className={activeSection === 'references' ? 'active' : ''}
               onClick={(e) => handleLinkClick(e, '#references')}
             >
-              References
+              {t('references')}
             </a>
           </li>
         </ul>

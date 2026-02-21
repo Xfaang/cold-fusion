@@ -1,44 +1,46 @@
+import { useLanguage } from '../LanguageContext'
+
 const Models = () => {
+  const { t } = useLanguage()
+
   return (
     <section id="models">
       <div className="divider"></div>
-      <h2>Models and Critiques</h2>
-      <p>Three fundamental constraints challenge LENR claims:</p>
+      <h2>{t('modelsTitle')}</h2>
+      <p>{t('modelsIntro')}</p>
       <ul className="text-gray">
         <li>
-          <strong>Coulomb barrier</strong> - Nuclear reactions require overcoming 
-          electrostatic repulsion
+          <strong>{t('modelsCoulombBarrier')}</strong> {t('modelsCoulombDesc')}
         </li>
         <li>
-          <strong>Missing commensurate products</strong> - Nuclear energy should produce 
-          detectable nuclear byproducts
+          <strong>{t('modelsCommensurate')}</strong> {t('modelsCommensurateDesc')}
         </li>
         <li>
-          <strong>Inconsistent signals</strong> - Results vary dramatically between experiments
+          <strong>{t('modelsInconsistent')}</strong> {t('modelsInconsistentDesc')}
         </li>
       </ul>
       
-      <h3>Theory Families</h3>
+      <h3>{t('modelsTheoryFamilies')}</h3>
       <ul className="no-bullets">
         <li style={{ margin: '0.8rem 0' }}>
-          • <strong>Lattice screening</strong> <span className="confidence medium">Medium</span>
+          • <strong>{t('modelsLatticeScreening')}</strong> <span className="confidence medium">{t('confidenceMedium')}</span>
           <span className="text-gray" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>
-            (for small effects)
+            {t('modelsLatticeNote')}
           </span>
         </li>
         <li style={{ margin: '0.8rem 0' }}>
-          • <strong>Condensed-matter nuclear science</strong> <span className="confidence low">Low</span>
+          • <strong>{t('modelsCondensed')}</strong> <span className="confidence low">{t('confidenceLow')}</span>
         </li>
         <li style={{ margin: '0.8rem 0' }}>
-          • <strong>Neutron-mediated</strong> <span className="confidence low">Low</span>
+          • <strong>{t('modelsNeutron')}</strong> <span className="confidence low">{t('confidenceLow')}</span>
         </li>
         <li style={{ margin: '0.8rem 0' }}>
-          • <strong>Muon-catalyzed fusion analogy</strong> <span className="confidence high">High</span>
+          • <strong>{t('modelsMuon')}</strong> <span className="confidence high">{t('confidenceHigh')}</span>
           <span className="text-gray" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>
-            (known)
-          </span> / <span className="confidence low">Low</span>
+            {t('modelsMuonKnown')}
+          </span> / <span className="confidence low">{t('confidenceLow')}</span>
           <span className="text-gray" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>
-            (relevance)
+            {t('modelsMuonRelevance')}
           </span>
         </li>
       </ul>

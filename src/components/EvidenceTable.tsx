@@ -1,113 +1,125 @@
+import { useLanguage } from '../LanguageContext'
 import './EvidenceTable.css'
 
 interface Experiment {
-  title: string
-  measurements: string
-  outcome: string
+  titleKey: string
+  measurementsKey: string
+  outcomeKey: string
   confidence: 'high' | 'medium' | 'low' | 'very-low'
 }
 
 const EvidenceTable = () => {
+  const { t } = useLanguage()
+
   const experiments: Experiment[] = [
     {
-      title: 'Fleischmann & Pons 1989',
-      measurements: 'Calorimetry + nuclear signals',
-      outcome: 'Excess enthalpy reported',
+      titleKey: 'exp1Title',
+      measurementsKey: 'exp1Measurements',
+      outcomeKey: 'exp1Outcome',
       confidence: 'medium'
     },
     {
-      title: 'Lewis et al. 1989',
-      measurements: 'Calorimetry + neutrons + gammas + tritium + He',
-      outcome: 'No evidence',
+      titleKey: 'exp2Title',
+      measurementsKey: 'exp2Measurements',
+      outcomeKey: 'exp2Outcome',
       confidence: 'high'
     },
     {
-      title: 'Miskelly et al. 1989',
-      measurements: 'Calorimetry critique',
-      outcome: 'Artifacts can confound claims',
+      titleKey: 'exp3Title',
+      measurementsKey: 'exp3Measurements',
+      outcomeKey: 'exp3Outcome',
       confidence: 'high'
     },
     {
-      title: 'Albagli et al. 1990',
-      measurements: 'Constant-T calorimetry; neutron/γ; He; tritium',
-      outcome: 'No excess power or fusion products',
+      titleKey: 'exp4Title',
+      measurementsKey: 'exp4Measurements',
+      outcomeKey: 'exp4Outcome',
       confidence: 'high'
     },
     {
-      title: 'McKubre/SRI 1992+',
-      measurements: 'Calorimetry + loading correlations',
-      outcome: 'Excess power correlated with D/Pd',
+      titleKey: 'exp5Title',
+      measurementsKey: 'exp5Measurements',
+      outcomeKey: 'exp5Outcome',
       confidence: 'medium'
     },
     {
-      title: 'Mosier-Boss et al. 2009',
-      measurements: 'CR-39 track detectors',
-      outcome: 'Triple tracks observed',
+      titleKey: 'exp6Title',
+      measurementsKey: 'exp6Measurements',
+      outcomeKey: 'exp6Outcome',
       confidence: 'low'
     },
     {
-      title: 'Berlinguette et al. 2019',
-      measurements: 'Multi-institution rigorous tests',
-      outcome: 'No evidence of cold fusion',
+      titleKey: 'exp7Title',
+      measurementsKey: 'exp7Measurements',
+      outcomeKey: 'exp7Outcome',
       confidence: 'high'
     },
     {
-      title: 'Chen et al. 2025',
-      measurements: 'Neutron yield with Pd + electrochemical loading',
-      outcome: '~15% neutron-rate enhancement',
+      titleKey: 'exp8Title',
+      measurementsKey: 'exp8Measurements',
+      outcomeKey: 'exp8Outcome',
       confidence: 'high'
     }
   ]
 
+  const getConfidenceLabel = (confidence: string) => {
+    switch (confidence) {
+      case 'high': return t('confidenceHigh')
+      case 'medium': return t('confidenceMedium')
+      case 'low': return t('confidenceLow')
+      case 'very-low': return t('confidenceVeryLow')
+      default: return confidence
+    }
+  }
+
   return (
     <section id="evidence">
       <div className="divider"></div>
-      <h2>Evidence Inventory</h2>
-      <p>Categories of claimed observations and their confidence levels:</p>
+      <h2>{t('evidenceTitle')}</h2>
+      <p>{t('evidenceIntro')}</p>
       
       <ul className="no-bullets evidence-categories">
         <li>
-          • Heat/excess heat <span className="confidence medium">Medium</span>
+          • {t('evidenceHeat')} <span className="confidence medium">{t('confidenceMedium')}</span>
         </li>
         <li>
-          • Neutrons/gammas <span className="confidence medium">Medium</span> 
+          • {t('evidenceNeutrons')} <span className="confidence medium">{t('confidenceMedium')}</span> 
           <span className="text-gray" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>
-            (for small signals)
+            {t('evidenceNeutronsNote')}
           </span>
         </li>
         <li>
-          • Tritium <span className="confidence medium">Medium</span> 
+          • {t('evidenceTritium')} <span className="confidence medium">{t('confidenceMedium')}</span> 
           <span className="text-gray" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>
-            (reported)
-          </span> / <span className="confidence low">Low</span>
+            {t('evidenceTritiumReported')}
+          </span> / <span className="confidence low">{t('confidenceLow')}</span>
           <span className="text-gray" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>
-            (nuclear origin)
+            {t('evidenceTritiumNuclear')}
           </span>
         </li>
         <li>
-          • Helium-4 <span className="confidence low">Low-Medium</span>
+          • {t('evidenceHelium')} <span className="confidence low">{t('confidenceLow')}-{t('confidenceMedium')}</span>
         </li>
         <li>
-          • CR-39 tracks <span className="confidence low">Low-Medium</span>
+          • {t('evidenceTracks')} <span className="confidence low">{t('confidenceLow')}-{t('confidenceMedium')}</span>
         </li>
         <li>
-          • Isotopic shifts <span className="confidence low">Low</span>
+          • {t('evidenceIsotopic')} <span className="confidence low">{t('confidenceLow')}</span>
         </li>
       </ul>
 
-      <h3 id="key-experiments">Key Experiments</h3>
+      <h3 id="key-experiments">{t('evidenceKeyExperiments')}</h3>
       <div className="experiments-grid">
         {experiments.map((experiment, index) => (
           <div key={index} className="experiment-card">
             <div className="experiment-header">
-              <div className="experiment-title">{experiment.title}</div>
+              <div className="experiment-title">{t(experiment.titleKey)}</div>
               <div className={`confidence ${experiment.confidence}`}>
-                {experiment.confidence === 'very-low' ? 'Very Low' : 
-                 experiment.confidence.charAt(0).toUpperCase() + experiment.confidence.slice(1)}
+                {getConfidenceLabel(experiment.confidence)}
               </div>
             </div>
-            <div className="experiment-measurements">{experiment.measurements}</div>
-            <div className="experiment-outcome">{experiment.outcome}</div>
+            <div className="experiment-measurements">{t(experiment.measurementsKey)}</div>
+            <div className="experiment-outcome">{t(experiment.outcomeKey)}</div>
           </div>
         ))}
       </div>

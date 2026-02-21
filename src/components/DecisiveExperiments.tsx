@@ -1,44 +1,46 @@
+import { useLanguage } from '../LanguageContext'
 import './DecisiveExperiments.css'
 
 const DecisiveExperiments = () => {
+  const { t } = useLanguage()
+
   return (
     <section id="experiments">
       <div className="divider"></div>
-      <h2>Decisive Experiments</h2>
+      <h2>{t('experimentsTitle')}</h2>
       <p>
-        A systematic approach to resolving the LENR question requires rigorous 
-        experimental protocols and multi-stage validation.
+        {t('experimentsIntro')}
       </p>
 
-      <h3 id="flowchart">Experimental Flowchart</h3>
+      <h3 id="flowchart">{t('experimentsFlowchart')}</h3>
       <div className="flowchart">
         <div className="flow-stage">
           <div className="stage-number">01</div>
-          <div className="stage-title">Audit-grade calorimetry</div>
-          <div className="stage-question">Excess &gt; 10x chemical?</div>
+          <div className="stage-title">{t('experimentsStage1')}</div>
+          <div className="stage-question">{t('experimentsStage1Q')}</div>
           <div className="stage-paths">
-            <div className="stage-path no">No → Conclude no evidence</div>
-            <div className="stage-path yes">Yes → Stage 2</div>
+            <div className="stage-path no">{t('experimentsStage1No')}</div>
+            <div className="stage-path yes">{t('experimentsStage1Yes')}</div>
           </div>
         </div>
         
         <div className="flow-stage">
           <div className="stage-number">02</div>
-          <div className="stage-title">Simultaneous nuclear ash closure</div>
-          <div className="stage-question">Commensurate nuclear products detected?</div>
+          <div className="stage-title">{t('experimentsStage2')}</div>
+          <div className="stage-question">{t('experimentsStage2Q')}</div>
           <div className="stage-paths">
-            <div className="stage-path no">No → Tighten controls, repeat</div>
-            <div className="stage-path yes">Yes → Stage 3</div>
+            <div className="stage-path no">{t('experimentsStage2No')}</div>
+            <div className="stage-path yes">{t('experimentsStage2Yes')}</div>
           </div>
         </div>
         
         <div className="flow-stage">
           <div className="stage-number">03</div>
-          <div className="stage-title">Multi-lab replication</div>
-          <div className="stage-question">Independent replication ≥2 labs?</div>
+          <div className="stage-title">{t('experimentsStage3')}</div>
+          <div className="stage-question">{t('experimentsStage3Q')}</div>
           <div className="stage-paths">
-            <div className="stage-path no">No → Effect not controllable</div>
-            <div className="stage-path yes">Yes → Engineering path</div>
+            <div className="stage-path no">{t('experimentsStage3No')}</div>
+            <div className="stage-path yes">{t('experimentsStage3Yes')}</div>
           </div>
         </div>
       </div>

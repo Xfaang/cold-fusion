@@ -1,12 +1,15 @@
+import { useLanguage } from '../LanguageContext'
 import './ReactorDiagrams.css'
 
 const ReactorDiagrams = () => {
+  const { t } = useLanguage()
+
   return (
     <section id="schematics">
-      <h3>Reactor Schematics</h3>
+      <h3>{t('reactorTitle')}</h3>
       <div className="grid-2">
         <div className="schematic">
-          <h4>Pd-D Electrolysis Cell</h4>
+          <h4>{t('reactorPdD')}</h4>
           <div className="pd-cell">
             <div className="thermal-jacket"></div>
             <div className="cell-container">
@@ -22,7 +25,7 @@ const ReactorDiagrams = () => {
         </div>
         
         <div className="schematic">
-          <h4>Ni-H Gas Reactor</h4>
+          <h4>{t('reactorNiH')}</h4>
           <div className="ni-reactor">
             <div className="reactor-tube"></div>
             <div className="heater-coil"></div>

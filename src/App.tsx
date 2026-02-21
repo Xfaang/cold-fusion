@@ -1,5 +1,7 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 import './App.css'
+import { LanguageProvider } from './LanguageContext'
+import LanguageToggle from './components/LanguageToggle'
 import Sidebar from './components/Sidebar'
 import Hero from './components/Hero'
 import Introduction from './components/Introduction'
@@ -14,23 +16,26 @@ import References from './components/References'
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <Sidebar />
-        <main className="main-content">
-          <Hero />
-          <Introduction />
-          <Timeline />
-          <Reproducibility />
-          <EvidenceTable />
-          <Models />
-          <Expectations />
-          <DecisiveExperiments />
-          <ReactorDiagrams />
-          <References />
-        </main>
-      </div>
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <div className="app">
+          <LanguageToggle />
+          <Sidebar />
+          <main className="main-content">
+            <Hero />
+            <Introduction />
+            <Timeline />
+            <Reproducibility />
+            <EvidenceTable />
+            <Models />
+            <Expectations />
+            <DecisiveExperiments />
+            <ReactorDiagrams />
+            <References />
+          </main>
+        </div>
+      </Router>
+    </LanguageProvider>
   )
 }
 

@@ -1,3 +1,4 @@
+import { useLanguage } from '../LanguageContext'
 import './References.css'
 
 interface Reference {
@@ -7,6 +8,8 @@ interface Reference {
 }
 
 const References = () => {
+  const { t } = useLanguage()
+  
   const references: Reference[] = [
     {
       number: '[1]',
@@ -42,7 +45,7 @@ const References = () => {
 
   return (
     <section id="references" className="references">
-      <h2>References</h2>
+      <h2>{t('referencesTitle')}</h2>
       {references.map((ref, index) => (
         <div key={index} className="reference">
           <span className="ref-number">{ref.number}</span>

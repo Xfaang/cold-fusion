@@ -1,13 +1,15 @@
+import { useLanguage } from '../LanguageContext'
 import './Hero.css'
 
 const Hero = () => {
+  const { t } = useLanguage()
+
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1 className="glow">Cold Fusion & LENR: What We Know</h1>
+        <h1 className="glow">{t('heroTitle')}</h1>
         <p className="subtitle">
-          A comprehensive analysis of cold fusion and Low Energy Nuclear Reactions research, 
-          evidence, and future prospects.
+          {t('heroSubtitle')}
         </p>
       </div>
     </section>

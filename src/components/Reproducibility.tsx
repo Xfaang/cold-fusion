@@ -1,23 +1,25 @@
+import { useLanguage } from '../LanguageContext'
+
 const Reproducibility = () => {
+  const { t } = useLanguage()
+
   return (
     <section id="reproducibility">
       <div className="divider"></div>
-      <h2>Reproducibility</h2>
+      <h2>{t('reproducibilityTitle')}</h2>
       <p>
-        Many careful searches find no excess heat or fusion products. Positive reports exist 
-        but are intermittent. Key methodological issues include:
+        {t('reproducibilityIntro')}
       </p>
       <ul className="text-gray">
-        <li>Calorimeter type and calibration</li>
-        <li>Gas recombination accounting</li>
-        <li>D/Pd loading ratios</li>
-        <li>Near-background nuclear detection</li>
-        <li>Material purity and preparation</li>
-        <li>Environmental factors and controls</li>
+        <li>{t('reproducibilityList1')}</li>
+        <li>{t('reproducibilityList2')}</li>
+        <li>{t('reproducibilityList3')}</li>
+        <li>{t('reproducibilityList4')}</li>
+        <li>{t('reproducibilityList5')}</li>
+        <li>{t('reproducibilityList6')}</li>
       </ul>
       <p>
-        The lack of consistent reproducibility remains the primary challenge for the 
-        field's acceptance in mainstream science.
+        {t('reproducibilityConclusion')}
       </p>
     </section>
   )
