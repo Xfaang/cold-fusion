@@ -38,7 +38,7 @@ const References = () => {
         {
           numbers: '[29]',
           text: 'Fleischmann & Pons (1990) - Calorimetry of the Pd-D-D2O system',
-          link: 'https://www.sciencedirect.com/science/article/pii/002207289080009U'
+          link: 'https://lenr-canr.org/acrobat/Fleischmancalorimetr.pdf'
         },
         {
           numbers: '[32]',
@@ -138,7 +138,7 @@ const References = () => {
         {
           numbers: '[3][34]',
           text: 'Storms (2010) - Status of cold fusion',
-          link: 'https://www.researchgate.net/publication/46256682_Status_of_cold_fusion_2010'
+          link: 'https://lenr-canr.org/acrobat/StormsEstatusofcoa.pdf'
         },
         {
           numbers: '[6][23][25][27][45][46][84]',
@@ -188,7 +188,7 @@ const References = () => {
         {
           numbers: '[19][69]',
           text: 'NRC (2026) - Vision and Strategy: Regulating Fusion Machines',
-          link: 'https://www.nrc.gov/docs/ML2534/ML25344A070.pdf'
+          link: 'https://adamswebsearch2.nrc.gov/webSearch2/main.jsp?AccessionNumber=ML25344A070'
         },
         {
           numbers: '[70]',
