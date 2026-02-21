@@ -68,11 +68,11 @@
   }
   
   .timeline-item::before {
-    left: 15px;
-    width: 15px;
-    height: 15px;
+    left: 16px;
+    width: 13px;
+    height: 13px;
     top: 0.4rem;
-    transform: translateX(-50%);
+    transform: translateX(-55%);
   }
   
   .timeline-year {
