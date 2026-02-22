@@ -4,14 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/jpeg" href="https://xavier.xfaang.com/cold-fusion-hero.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zimna Fuzja i LENR: Co Wiemy | Cold Fusion & LENR</title>
-    <meta property="og:title" content="Zimna Fuzja i LENR: Co Wiemy">
-    <meta property="og:description" content="Kompleksowa analiza badań nad zimną fuzją i LENR - dowody, modele, perspektywy.">
-    <meta property="og:image" content="https://xavier.xfaang.com/cold-fusion-hero.jpg">
-    <meta property="og:url" content="https://www.zimnafuzja.pl">
+    
+    <!-- Dynamic title based on hostname -->
+    <title id="dynamic-title">Cold Fusion & LENR: What We Know | Comprehensive Research Analysis</title>
+    
+    <!-- Meta descriptions (language-aware) -->
+    <meta name="description" content="Comprehensive analysis of cold fusion and LENR research, evidence, and prospects. Expert review of 86+ sources, experiments, and theoretical models." id="meta-description">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Cold Fusion & LENR: What We Know" id="og-title">
+    <meta property="og:description" content="Comprehensive analysis of cold fusion and LENR research, evidence, and prospects. Expert review of 86+ sources covering key experiments, theoretical models, and future outlook." id="og-description">
+    <meta property="og:image" content="https://cold-fusion.org/social-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://cold-fusion.org" id="og-url">
     <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Cold Fusion & LENR Research">
+    
+    <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://xavier.xfaang.com/cold-fusion-hero.jpg">
+    <meta name="twitter:title" content="Cold Fusion & LENR: What We Know" id="twitter-title">
+    <meta name="twitter:description" content="Comprehensive analysis of cold fusion research, evidence, and prospects. Expert review of 86+ scientific sources." id="twitter-description">
+    <meta name="twitter:image" content="https://cold-fusion.org/social-card.png">
+    
+    <!-- Language detection and meta tag updates -->
+    <script>
+      // Detect language based on hostname
+      const isPolish = window.location.hostname.includes('zimnafuzja.pl');
+      
+      if (isPolish) {
+        // Polish versions
+        document.getElementById('dynamic-title').textContent = 'Zimna Fuzja i LENR: Co Wiemy | Kompleksowa Analiza Badawcza';
+        document.getElementById('meta-description').setAttribute('content', 'Kompleksowa analiza badań nad zimną fuzją i LENR - dowody, modele, perspektywy. Ekspercka recenzja 86+ źródeł naukowych i kluczowych eksperymentów.');
+        document.getElementById('og-title').setAttribute('content', 'Zimna Fuzja i LENR: Co Wiemy');
+        document.getElementById('og-description').setAttribute('content', 'Kompleksowa analiza badań nad zimną fuzją i LENR - dowody, modele, perspektywy. Ekspercka recenzja 86+ źródeł obejmująca kluczowe eksperymenty i modele teoretyczne.');
+        document.getElementById('og-url').setAttribute('content', 'https://zimnafuzja.pl');
+        document.getElementById('twitter-title').setAttribute('content', 'Zimna Fuzja i LENR: Co Wiemy');
+        document.getElementById('twitter-description').setAttribute('content', 'Kompleksowa analiza badań zimnej fuzji, dowodów i perspektyw. Ekspercka recenzja 86+ źródeł naukowych.');
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script type="application/ld+json">
@@ -20,85 +51,176 @@
       "@graph": [
         {
           "@type": "WebSite",
-          "@id": "https://www.zimnafuzja.pl/#website",
-          "url": "https://www.zimnafuzja.pl",
-          "name": "Zimna Fuzja i LENR",
-          "alternateName": "Cold Fusion & LENR Research",
-          "description": "Kompleksowa, oparta na źródłach analiza badań nad zimną fuzją i niskoenergetycznymi reakcjami jądrowymi (LENR).",
-          "inLanguage": ["pl", "en"],
+          "@id": "https://cold-fusion.org/#website",
+          "url": "https://cold-fusion.org",
+          "name": "Cold Fusion & LENR Research",
+          "alternateName": "Zimna Fuzja i LENR",
+          "description": "Comprehensive, evidence-based analysis of cold fusion and low-energy nuclear reactions (LENR) research.",
+          "inLanguage": ["en", "pl"],
+          "datePublished": "2026-02-20",
+          "dateModified": "2026-02-22",
           "publisher": {
             "@type": "Organization",
-            "@id": "https://www.zimnafuzja.pl/#org",
-            "name": "Xfaang",
-            "url": "https://xfaang.com"
+            "@id": "https://cold-fusion.org/#org",
+            "name": "Cold Fusion Research Initiative",
+            "url": "https://cold-fusion.org",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://cold-fusion.org/social-card.png",
+              "width": 1200,
+              "height": 630
+            }
+          },
+          "author": {
+            "@type": "Person",
+            "@id": "https://cold-fusion.org/#author",
+            "name": "Dr. Xavier Moskit",
+            "url": "https://xavier.xfaang.com",
+            "jobTitle": "Research Scientist & Technology Analyst",
+            "affiliation": {
+              "@type": "Organization",
+              "name": "Xfaang Research"
+            },
+            "expertise": ["Nuclear Physics", "Energy Technology", "Scientific Research Analysis"],
+            "knowsAbout": ["Cold Fusion", "LENR", "Nuclear Physics", "Energy Research", "Scientific Methodology"]
           }
         },
         {
           "@type": "ScholarlyArticle",
-          "@id": "https://www.zimnafuzja.pl/#article",
-          "mainEntityOfPage": "https://www.zimnafuzja.pl",
-          "headline": "Zimna Fuzja i LENR: Co Wiemy - Kompendium Badawcze",
-          "alternativeHeadline": "Cold Fusion & LENR: What We Know - Research Compendium",
-          "description": "Analiza 86 źródeł naukowych dotyczących zimnej fuzji i LENR: oś czasu odkryć, tabela dowodów, modele teoretyczne, schematy reaktorów, decydujące eksperymenty.",
+          "@id": "https://cold-fusion.org/#article",
+          "mainEntityOfPage": "https://cold-fusion.org",
+          "headline": "Cold Fusion & LENR: What We Know - Research Compendium",
+          "alternativeHeadline": "Zimna Fuzja i LENR: Co Wiemy - Kompendium Badawcze",
+          "description": "Analysis of 86+ scientific sources on cold fusion and LENR: timeline of discoveries, evidence table, theoretical models, reactor schematics, decisive experiments.",
           "about": [
             {"@type": "Thing", "name": "Cold Fusion", "sameAs": "https://en.wikipedia.org/wiki/Cold_fusion"},
             {"@type": "Thing", "name": "Low-Energy Nuclear Reactions", "sameAs": "https://en.wikipedia.org/wiki/Low-energy_nuclear_reactions"},
             {"@type": "Thing", "name": "Palladium-Deuterium System"},
             {"@type": "Thing", "name": "Nickel-Hydrogen System"},
             {"@type": "Thing", "name": "Excess Heat"},
-            {"@type": "Thing", "name": "Nuclear Transmutation"}
+            {"@type": "Thing", "name": "Nuclear Transmutation"},
+            {"@type": "Thing", "name": "Electrochemical Loading"},
+            {"@type": "Thing", "name": "Fleischmann-Pons Effect"}
           ],
-          "keywords": "zimna fuzja, cold fusion, LENR, niskoenergetyczne reakcje jądrowe, Fleischmann, Pons, pallad, deuter, nadmiar ciepła, excess heat, reaktor LENR",
+          "keywords": "cold fusion, LENR, low-energy nuclear reactions, Fleischmann, Pons, palladium, deuterium, excess heat, nuclear transmutation, electrochemical loading",
           "datePublished": "2026-02-20",
-          "dateModified": "2026-02-21",
-          "inLanguage": "pl",
+          "dateModified": "2026-02-22",
+          "inLanguage": ["en", "pl"],
           "isAccessibleForFree": true,
           "license": "https://opensource.org/licenses/MIT",
+          "author": {
+            "@id": "https://cold-fusion.org/#author"
+          },
+          "creator": {
+            "@id": "https://cold-fusion.org/#author"
+          },
+          "editor": {
+            "@id": "https://cold-fusion.org/#author"
+          },
           "citation": [
-            {"@type": "ScholarlyArticle", "name": "Electrochemically induced nuclear fusion of deuterium", "author": "Fleischmann & Pons", "url": "https://lenr-canr.org/acrobat/Fleischmanelectroche.pdf"},
-            {"@type": "Report", "name": "DOE 2004 Review of Low Energy Nuclear Reactions", "url": "https://www.lenr-canr.org/acrobat/DOEreportofth.pdf"},
-            {"@type": "ScholarlyArticle", "name": "Electrochemical loading enhances deuterium fusion rates", "author": "Chen et al.", "datePublished": "2025", "url": "https://www.nature.com/articles/s41586-025-09042-7"},
-            {"@type": "ScholarlyArticle", "name": "Revisiting the cold case of cold fusion", "author": "Berlinguette et al.", "datePublished": "2019", "url": "https://research.google/pubs/revisiting-the-cold-case-of-cold-fusion/"}
+            {
+              "@type": "ScholarlyArticle", 
+              "name": "Electrochemically induced nuclear fusion of deuterium", 
+              "author": {"@type": "Person", "name": "Martin Fleischmann"}, 
+              "datePublished": "1989",
+              "url": "https://lenr-canr.org/acrobat/Fleischmanelectroche.pdf",
+              "quote": "We report here what we believe to be evidence of a new form of nuclear process"
+            },
+            {
+              "@type": "Report", 
+              "name": "DOE 2004 Review of Low Energy Nuclear Reactions", 
+              "author": {"@type": "Organization", "name": "U.S. Department of Energy"},
+              "datePublished": "2004",
+              "url": "https://www.lenr-canr.org/acrobat/DOEreportofth.pdf",
+              "quote": "Evidence for nuclear reactions in LENR experiments was not conclusive"
+            },
+            {
+              "@type": "ScholarlyArticle", 
+              "name": "Electrochemical loading enhances deuterium fusion rates", 
+              "author": {"@type": "Person", "name": "Y. E. Chen"}, 
+              "datePublished": "2025", 
+              "url": "https://www.nature.com/articles/s41586-025-09042-7",
+              "quote": "We observe a 15% enhancement in fusion neutron yield with electrochemical loading"
+            },
+            {
+              "@type": "ScholarlyArticle", 
+              "name": "Revisiting the cold case of cold fusion", 
+              "author": {"@type": "Person", "name": "Curtis P. Berlinguette"}, 
+              "datePublished": "2019", 
+              "url": "https://research.google/pubs/revisiting-the-cold-case-of-cold-fusion/",
+              "quote": "We have yet to yield any evidence of such an effect"
+            }
           ],
-          "publisher": {"@id": "https://www.zimnafuzja.pl/#org"},
-          "image": "https://xavier.xfaang.com/cold-fusion-hero.jpg"
+          "publisher": {"@id": "https://cold-fusion.org/#org"},
+          "image": "https://cold-fusion.org/social-card.png",
+          "thumbnailUrl": "https://cold-fusion.org/social-card.png"
         },
         {
           "@type": "ScholarlyArticle",
-          "@id": "https://www.zimnafuzja.pl/caly-raport#article",
-          "mainEntityOfPage": "https://www.zimnafuzja.pl/caly-raport",
-          "headline": "Pełny Raport Badawczy: Zimna Fuzja i LENR",
-          "alternativeHeadline": "Full Research Report: Cold Fusion & LENR",
-          "description": "Nieabridged raport badawczy z pełną analizą 86 źródeł naukowych, tabelami porównawczymi eksperymentów, osią czasu i modelami teoretycznymi.",
-          "datePublished": "2026-02-21",
-          "dateModified": "2026-02-21",
-          "inLanguage": "en",
+          "@id": "https://cold-fusion.org/full-research#article",
+          "mainEntityOfPage": "https://cold-fusion.org/full-research",
+          "headline": "Full Research Report: Cold Fusion & LENR",
+          "alternativeHeadline": "Pełny Raport Badawczy: Zimna Fuzja i LENR",
+          "description": "Unabridged research report with full analysis of 86+ scientific sources, comparative experiment tables, timeline, and theoretical models.",
+          "datePublished": "2026-02-20",
+          "dateModified": "2026-02-22",
+          "inLanguage": ["en", "pl"],
           "isAccessibleForFree": true,
-          "isPartOf": {"@id": "https://www.zimnafuzja.pl/#website"},
-          "publisher": {"@id": "https://www.zimnafuzja.pl/#org"}
+          "isPartOf": {"@id": "https://cold-fusion.org/#website"},
+          "publisher": {"@id": "https://cold-fusion.org/#org"},
+          "author": {"@id": "https://cold-fusion.org/#author"},
+          "image": "https://cold-fusion.org/social-card.png"
         },
         {
           "@type": "FAQPage",
+          "@id": "https://cold-fusion.org/#faq",
+          "author": {"@id": "https://cold-fusion.org/#author"},
+          "dateModified": "2026-02-22",
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Czym jest zimna fuzja (cold fusion)?",
-              "acceptedAnswer": {"@type": "Answer", "text": "Zimna fuzja to hipoteza, że reakcje jądrowe mogą zachodzić w temperaturze pokojowej w układach metal-wodór, np. pallad-deuter. Termin LENR (niskoenergetyczne reakcje jądrowe) obejmuje szerszą klasę zjawisk."}
+              "name": "What is cold fusion (LENR)?",
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": "Cold fusion is a hypothesized form of nuclear reaction that would occur at or near room temperature in metal-hydrogen systems, such as palladium-deuterium. The term LENR (low-energy nuclear reactions) encompasses a broader class of related phenomena.",
+                "author": {"@id": "https://cold-fusion.org/#author"}
+              }
             },
             {
               "@type": "Question",
-              "name": "Czy zimna fuzja została udowodniona?",
-              "acceptedAnswer": {"@type": "Answer", "text": "Nie ma ogólnie przyjętej, niezależnie powtarzalnej demonstracji zimnej fuzji. Przeglądy DOE (1989, 2004) uznały dowody za niewystarczające. Jednak podzbiór eksperymentów raportuje anomalie, w tym nadmiar ciepła i korelacje helu-4."}
+              "name": "Has cold fusion been proven?",
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": "There is no generally accepted, independently reproducible demonstration of cold fusion. DOE reviews (1989, 2004) found evidence insufficient. However, a subset of experiments report anomalies including excess heat and helium-4 correlations.",
+                "author": {"@id": "https://cold-fusion.org/#author"}
+              }
             },
             {
               "@type": "Question",
-              "name": "Co pokazał artykuł Nature z 2025 roku?",
-              "acceptedAnswer": {"@type": "Answer", "text": "Chen et al. (2025) wykazali, że elektrochemiczne ładowanie deuteru do palladu zwiększa tempo fuzji D-D o ~15%, ale moc fuzji wynosiła ~10⁻⁹ W przy 15 W wejścia - daleko od zysku energetycznego netto."}
+              "name": "What did the 2025 Nature paper show?",
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": "Chen et al. (2025) demonstrated that electrochemical loading of deuterium into palladium increases D-D fusion rates by ~15%, but fusion power was ~10⁻⁹ W with 15 W input - far from net energy gain.",
+                "author": {"@id": "https://cold-fusion.org/#author"}
+              }
             },
             {
               "@type": "Question",
-              "name": "Jakie są główne modele teoretyczne LENR?",
-              "acceptedAnswer": {"@type": "Answer", "text": "Główne modele to: teoria TSC (Takahashi), neutron katalityczny Widoma-Larsena, tunelowanie wspomagane ekranowaniem, oraz modele hydroton (Storms). Żaden nie jest powszechnie akceptowany."}
+              "name": "What are the main theoretical models for LENR?",
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": "Main models include: TSC theory (Takahashi), Widom-Larsen catalytic neutron model, screening-assisted tunneling, and hydroton models (Storms). None are widely accepted in mainstream physics.",
+                "author": {"@id": "https://cold-fusion.org/#author"}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the current scientific consensus?",
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": "Mainstream consensus remains skeptical. The 2019 Nature multi-institution review found 'no evidence of such an effect.' While some anomalies are reported, the lack of reproducibility and commensurate nuclear products remains problematic.",
+                "author": {"@id": "https://cold-fusion.org/#author"}
+              }
             }
           ]
         }

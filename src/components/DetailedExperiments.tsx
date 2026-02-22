@@ -30,8 +30,8 @@ const DetailedExperiments = () => {
   return (
     <section id="detailed-experiments">
       <div className="divider"></div>
-      <h2>Detailed Experiments Documentation</h2>
-      <p>Comprehensive analysis of the top 10 most significant cold fusion/LENR experiments with methods, results, and replication status.</p>
+      <h2>{t('detailedExperiments')}</h2>
+      <p>{t('detailedExperimentsIntro')}</p>
       
       <div className="experiments-overview">
         <div className="experiments-grid-detailed">

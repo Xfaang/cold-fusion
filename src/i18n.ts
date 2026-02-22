@@ -73,6 +73,8 @@ export const translations = {
     evidenceTracks: "Ślady CR-39",
     evidenceIsotopic: "Przesunięcia izotopowe",
     evidenceKeyExperiments: "Kluczowe Eksperymenty",
+    detailedExperiments: "Szczegółowa Dokumentacja Eksperymentów",
+    detailedExperimentsIntro: "Kompleksowa analiza 10 najważniejszych eksperymentów zimnej fuzji/LENR z metodami, wynikami i statusem replikacji.",
     
     // Experiments data
     exp1Title: "Fleischmann i Pons 1989",
@@ -604,6 +606,8 @@ export const translations = {
     evidenceTracks: "CR-39 tracks",
     evidenceIsotopic: "Isotopic shifts",
     evidenceKeyExperiments: "Key Experiments",
+    detailedExperiments: "Detailed Experiments Documentation",
+    detailedExperimentsIntro: "Comprehensive analysis of the top 10 most significant cold fusion/LENR experiments with methods, results, and replication status.",
     
     // Experiments data
     exp1Title: "Fleischmann & Pons 1989",

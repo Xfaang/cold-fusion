@@ -115,7 +115,7 @@ const Sidebar = () => {
               className={activeSection === 'detailed-experiments' ? 'active' : ''}
               onClick={(e) => handleLinkClick(e, '#detailed-experiments')}
             >
-              Detailed Experiments
+{t('detailedExperiments')}
             </a>
           </li>
           <li>
