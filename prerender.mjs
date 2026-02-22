@@ -27,7 +27,10 @@ async function prerender() {
   // Wait for server to start
   await new Promise(r => setTimeout(r, 2000));
 
-  const browser = await puppeteer.default.launch({ headless: true, args: ['--no-sandbox'] });
+  const browser = await puppeteer.default.launch({ 
+    headless: true, 
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'] 
+  });
 
   for (const route of ROUTES) {
     console.log(`Prerendering ${route}...`);
