@@ -28,7 +28,7 @@ export const translations = {
     confidenceVeryLow: "Pewność: Bardzo Niska",
     
     // Introduction content
-    introContent1: "Zimna fuzja to historyczna nazwa kontrowersyjnych doniesień (od 1989 r.), że w układach metal\u2013deuter (np. Pd\u2013D podczas elektrolizy) może pojawiać się nadmiar ciepła i/lub sygnały przypisywane procesom jądrowym w warunkach bliskich temperaturze otoczenia. LENR to szerszy termin obejmujący różne hipotezy o reakcjach jądrowych niskiej energii w materii skondensowanej. Do dziś brak powszechnie zaakceptowanej, niezależnie powtarzalnej demonstracji dającej jednocześnie: (a) audytowalną kalorymetrię oraz (b) współmierne \u2018popioły\u2019/promieniowanie jądrowe.",
+    introContent1: "Zimna fuzja to historyczna nazwa kontrowersyjnych doniesień (od 1989 r.), że w układach metal\u2013deuter (np. Pd\u2013D podczas elektrolizy) może pojawiać się nadmiar ciepła i/lub sygnały przypisywane procesom jądrowym w warunkach bliskich temperatury pokojowej. LENR to szerszy termin obejmujący różne hipotezy o reakcjach jądrowych niskiej energii w materii skondensowanej. Do dziś brak powszechnie zaakceptowanej, niezależnie powtarzalnej demonstracji dającej jednocześnie: (a) audytowalną kalorymetrię oraz (b) współmierne \u2018popioły\u2019/promieniowanie jądrowe.",
     introContent2: "Dziedzina pozostaje kontrowersyjna, z dziesięcioleciami sprzecznych wyników i trwającą debatą na temat podstawowych mechanizmów i powtarzalności zgłaszanych efektów.",
     statusSummaryTitle: "Stan wiedzy w pigułce",
     statusEstablishedTitle: "Co jest ustalone",
@@ -602,7 +602,7 @@ export const translations = {
     confidenceVeryLow: "Confidence: Very Low",
     
     // Introduction content
-    introContent1: "Cold fusion is the historical label for controversial claims (since 1989) that metal\u2013deuterium systems (e.g. Pd\u2013D electrolysis) can produce excess heat and/or signals attributed to nuclear processes at near-ambient temperatures. LENR is a broader umbrella covering various hypotheses about low-energy nuclear reactions in condensed matter. To date, no generally accepted, independently reproducible demonstration exists that simultaneously delivers: (a) auditable calorimetry and (b) commensurate nuclear ash/radiation.",
+    introContent1: "Cold fusion is the historical label for controversial claims (since 1989) that metal\u2013deuterium systems (e.g. Pd\u2013D electrolysis) can produce excess heat and/or signals attributed to nuclear processes at near-room temperatures. LENR is a broader umbrella covering various hypotheses about low-energy nuclear reactions in condensed matter. To date, no generally accepted, independently reproducible demonstration exists that simultaneously delivers: (a) auditable calorimetry and (b) commensurate nuclear ash/radiation.",
     introContent2: "The field remains controversial, with decades of conflicting results and ongoing debate about the fundamental mechanisms and reproducibility of claimed effects.",
     statusSummaryTitle: "State of knowledge at a glance",
     statusEstablishedTitle: "What is established",
