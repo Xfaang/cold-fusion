@@ -3,7 +3,7 @@ export type Language = 'pl' | 'en';
 export const translations = {
   pl: {
     // Hero section
-    heroTitle: "Zimna Fuzja i LENR: Co Wiemy",
+    heroTitle: "Zimna Fuzja / LENR: Co Wiemy",
     heroSubtitle: "Kompleksowa analiza badań zimnej fuzji i Reakcji Jądrowych Niskiej Energii, dowodów i perspektyw na przyszłość.",
     
     // Navigation
@@ -28,7 +28,7 @@ export const translations = {
     confidenceVeryLow: "Pewność: Bardzo Niska",
     
     // Introduction content
-    introContent1: "Zimna fuzja (LENR) odnosi się do twierdzeń o energii o skali jądrowej w układach materii skondensowanej w temperaturze otoczenia. Dobrze kontrolowane replikacje nie wykazują silnej produkcji energii netto. Część badań donosi o przerywanym nadmiarze ciepła. Ponowna ocena Nature z 2019 roku nie znalazła dowodów. Nature z 2025 roku poinformował, że elektrochemiczne ładowanie zwiększyło wydajność neutronów z fuzji D-D o ~15%.",
+    introContent1: "Zimna fuzja to historyczna nazwa kontrowersyjnych doniesień (od 1989 r.), że w układach metal\u2013deuter (np. Pd\u2013D podczas elektrolizy) może pojawiać się nadmiar ciepła i/lub sygnały przypisywane procesom jądrowym w warunkach bliskich temperaturze otoczenia. LENR to szerszy termin obejmujący różne hipotezy o reakcjach jądrowych niskiej energii w materii skondensowanej. Do dziś brak powszechnie zaakceptowanej, niezależnie powtarzalnej demonstracji dającej jednocześnie: (a) audytowalną kalorymetrię oraz (b) współmierne \u2018popioły\u2019/promieniowanie jądrowe.",
     introContent2: "Dziedzina pozostaje kontrowersyjna, z dziesięcioleciami sprzecznych wyników i trwającą debatą na temat podstawowych mechanizmów i powtarzalności zgłaszanych efektów.",
     
     // Timeline section
@@ -44,7 +44,7 @@ export const translations = {
     timeline1990_2: "Albagli i in. - wielomodalne poszukiwania zerowe",
     timeline1992: "McKubre/SRI - korelacje nadmiaru mocy z ładowaniem D/Pd",
     timeline2004: "Przegląd DOE LENR - dowody niekonkluzywne",
-    timeline2019_1: "Nature - ponowna ocena wielu instytucji - brak dowodów",
+    timeline2019_1: "Nature 2019 (program wieloośrodkowy): nie wykryto efektu w badanych warunkach; opisano, co metodologicznie stanowi \u2018twardy test\u2019",
     timeline2019_2: "Mizuno donosi o nadmiarze ciepła Pd-na-Ni",
     timeline2025: "Nature: elektrochemiczne ładowanie D zwiększa wydajność neutronów fuzji wiązka-cel (~15%)",
     timeline2026: "NRC publikuje strategię regulacji fuzji",
@@ -105,9 +105,9 @@ export const translations = {
     exp7Measurements: "Rygorystyczne testy wielu instytucji",
     exp7Outcome: "Brak dowodów na zimną fuzję",
     
-    exp8Title: "Chen i in. 2025",
-    exp8Measurements: "Wydajność neutronów z Pd + ładowanie elektrochemiczne",
-    exp8Outcome: "~15% zwiększenie szybkości neutronów",
+    exp8Title: "Chen, Maiwald, Berlinguette i in. 2025",
+    exp8Measurements: "Fuzja wiązka-cel D-D + ładowanie elektrochemiczne Pd (nie twierdzenie o nadmiarze ciepła LENR)",
+    exp8Outcome: "~15% wzrost wydajności neutronów; moc fuzji ~10\u207B\u2079 W przy ~15 W wejścia",
     
     exp9Title: "Bang i in. 2026 (CoReLS)",
     exp9Measurements: "Fuzja laserowo-klastrowa DD + dodatkowy targ CD2",
@@ -207,12 +207,12 @@ export const translations = {
     // Experiment 10: Chen et al. 2025
     exp10DetailTitle: "Chen et al. (2025) - Wzmocnienie Fuzji Wiązka-Cel przez Ładowanie",
     exp10Journal: "Nature",
-    exp10Objective: "Badanie wpływu ładowania elektrochemicznego na wydajność fuzji w układach wiązka-cel",
-    exp10Methods: "Bombardowanie wiązką deuteru celów Pd z różnymi stopniami ładowania elektrochemicznego",
-    exp10Results: "15% wzrost wydajności neutronów przy wysokim ładowaniu D/Pd",
-    exp10Replication: "Powtarzalne wyniki w kontrolowanych warunkach",
-    exp10Significance: "Pierwszy jednoznacznie pozytywny wynik związany z ładowaniem w głównym czasopiśmie",
-    exp10Limitations: "Niewielki efekt wzmocnienia, ograniczony do konfiguracji wiązka-cel",
+    exp10Objective: "Badanie wpływu ładowania elektrochemicznego na wydajność fuzji D-D w konfiguracji wiązka-cel (akcelerator benchtop/PIII + komórka elektrochemiczna)",
+    exp10Methods: "Bombardowanie wiązką deuteru celów Pd z różnymi stopniami ładowania elektrochemicznego; pomiar wydajności neutronów",
+    exp10Results: "~15% wzrost wydajności neutronów przy wysokim ładowaniu D/Pd; moc fuzji rzędu 10\u207B\u2079 W przy ~15 W wejścia",
+    exp10Replication: "Powtarzalne wyniki w kontrolowanych warunkach; efekt konsystentny",
+    exp10Significance: "Nie jest to twierdzenie o \u2018nadmiarze ciepła LENR\u2019 \u2014 to fuzja wiązka-cel z efektem środowiska sieci krystalicznej. Pierwszy jednoznaczny wynik w głównym czasopiśmie łączący ładowanie z wydajnością jądrową.",
+    exp10Limitations: "Niewielki efekt wzmocnienia; moc wyjściowa ~10\u207B\u2079 W \u2014 ekonomicznie nieistotna bez poprawy o wiele rzędów wielkości; ograniczone do konfiguracji wiązka-cel",
     
     // Experiment 11: Bang et al. 2026
     exp11DetailTitle: "Bang i in. (2026) - Zwiększenie Wydajności Fuzji przez Wtórne Reakcje Wiązka-Targ",
@@ -550,7 +550,7 @@ export const translations = {
   },
   en: {
     // Hero section
-    heroTitle: "Cold Fusion & LENR: What We Know",
+    heroTitle: "Cold Fusion / LENR: What We Know",
     heroSubtitle: "A comprehensive analysis of cold fusion and Low Energy Nuclear Reactions research, evidence, and future prospects.",
     
     // Navigation
@@ -575,7 +575,7 @@ export const translations = {
     confidenceVeryLow: "Confidence: Very Low",
     
     // Introduction content
-    introContent1: "Cold fusion (LENR) refers to claims of nuclear-scale energy in condensed-matter systems at ambient temperatures. Well-controlled replications find no strong net energy production. A subset reports intermittent excess heat. 2019 Nature re-evaluation found no evidence. 2025 Nature reported electrochemical loading boosted D-D fusion neutron yield by ~15%.",
+    introContent1: "Cold fusion is the historical label for controversial claims (since 1989) that metal\u2013deuterium systems (e.g. Pd\u2013D electrolysis) can produce excess heat and/or signals attributed to nuclear processes at near-ambient temperatures. LENR is a broader umbrella covering various hypotheses about low-energy nuclear reactions in condensed matter. To date, no generally accepted, independently reproducible demonstration exists that simultaneously delivers: (a) auditable calorimetry and (b) commensurate nuclear ash/radiation.",
     introContent2: "The field remains controversial, with decades of conflicting results and ongoing debate about the fundamental mechanisms and reproducibility of claimed effects.",
     
     // Timeline section
@@ -591,7 +591,7 @@ export const translations = {
     timeline1990_2: "Albagli et al. multi-modal null search",
     timeline1992: "McKubre/SRI excess power correlations with D/Pd loading",
     timeline2004: "DOE LENR review - evidence inconclusive",
-    timeline2019_1: "Nature multi-institution re-evaluation - no evidence",
+    timeline2019_1: "Nature 2019 (multi-institution program): no effect detected within tested parameter space; described what constitutes a methodologically \u2018hard test\u2019",
     timeline2019_2: "Mizuno reports Pd-on-Ni excess heat",
     timeline2025: "Nature: electrochemical D-loading boosts beam-target fusion neutron yield (~15%)",
     timeline2026: "NRC publishes fusion regulation strategy",
@@ -652,9 +652,9 @@ export const translations = {
     exp7Measurements: "Multi-institution rigorous tests",
     exp7Outcome: "No evidence of cold fusion",
     
-    exp8Title: "Chen et al. 2025",
-    exp8Measurements: "Neutron yield with Pd + electrochemical loading",
-    exp8Outcome: "~15% neutron-rate enhancement",
+    exp8Title: "Chen, Maiwald, Berlinguette et al. 2025",
+    exp8Measurements: "D-D beam-target fusion + Pd electrochemical loading (not an LENR excess heat claim)",
+    exp8Outcome: "~15% neutron yield enhancement; fusion power ~10\u207B\u2079 W at ~15 W input",
     
     exp9Title: "Bang et al. 2026 (CoReLS)",
     exp9Measurements: "Laser-cluster DD fusion + secondary CD2 beam-target",
@@ -754,12 +754,12 @@ export const translations = {
     // Experiment 10: Chen et al. 2025
     exp10DetailTitle: "Chen et al. (2025) - Beam-Target Fusion Enhancement by Loading",
     exp10Journal: "Nature",
-    exp10Objective: "Investigation of electrochemical loading effects on fusion yield in beam-target setups",
-    exp10Methods: "Deuterium beam bombardment of Pd targets with various degrees of electrochemical loading",
-    exp10Results: "15% increase in neutron yield at high D/Pd loading",
-    exp10Replication: "Reproducible results under controlled conditions",
-    exp10Significance: "First unambiguously positive loading-related result in major journal",
-    exp10Limitations: "Small enhancement effect, limited to beam-target configuration",
+    exp10Objective: "Investigation of electrochemical loading effects on D-D fusion yield in beam-target setup (benchtop accelerator/PIII + electrochemical cell)",
+    exp10Methods: "Deuterium beam bombardment of Pd targets with various degrees of electrochemical loading; neutron yield measurement",
+    exp10Results: "~15% increase in neutron yield at high D/Pd loading; fusion power output on the order of 10\u207B\u2079 W with ~15 W input",
+    exp10Replication: "Reproducible results under controlled conditions; consistent effect",
+    exp10Significance: "This is not an \u2018LENR excess heat\u2019 claim \u2014 it is beam-target fusion with a lattice environment effect. First unambiguous result in a major journal linking loading to nuclear yield.",
+    exp10Limitations: "Small enhancement effect; output power ~10\u207B\u2079 W \u2014 economically irrelevant without many orders-of-magnitude improvement; limited to beam-target configuration",
     
     // Experiment 11: Bang et al. 2026
     exp11DetailTitle: "Bang et al. (2026) - Fusion Yield Enhancement via Secondary Beam-Target Reactions",

@@ -251,7 +251,7 @@ export const topTenExperiments: ExperimentDetail[] = [
   {
     id: 'chen-2025',
     titleKey: 'exp10DetailTitle',
-    authors: 'L. Chen, X. Zhang, M. Wang, Y. Liu',
+    authors: 'K.-Y. Chen, J. Maiwald, C.P. Berlinguette et al.',
     year: 2025,
     journalKey: 'exp10Journal',
     paperUrl: 'https://www.nature.com/articles/s41586-025-09042-7',
