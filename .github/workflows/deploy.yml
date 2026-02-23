@@ -18,11 +18,10 @@ jobs:
       
       - run: npm ci
       
-      - name: Build + Prerender
-        run: npm run build
+      - name: Build
+        run: npx tsc -b && npx vite build
         env:
           CI: true
-          PUPPETEER_ARGS: '--no-sandbox --disable-setuid-sandbox'
       
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
