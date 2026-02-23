@@ -6,6 +6,7 @@ interface Reference {
   numbers: string
   text: string
   link: string
+  section?: string  // anchor ID in full research page
 }
 
 interface ReferenceCategory {
@@ -23,27 +24,32 @@ const References = () => {
         {
           numbers: '[1][15][30][48][67]',
           text: 'Fleischmann & Pons - Electrochemically induced nuclear fusion of deuterium',
-          link: 'https://lenr-canr.org/acrobat/Fleischmanelectroche.pdf'
+          link: 'https://lenr-canr.org/acrobat/Fleischmanelectroche.pdf',
+          section: 'fr-timeline'
         },
         {
           numbers: '[22][24][83]',
           text: 'Jones et al. (1989) - Observation of cold nuclear fusion in condensed matter',
-          link: 'https://www.nature.com/articles/338737a0'
+          link: 'https://www.nature.com/articles/338737a0',
+          section: 'fr-timeline'
         },
         {
           numbers: '[26]',
           text: 'Lewis et al. (1989) - Searches for low-temperature nuclear fusion',
-          link: 'https://authors.library.caltech.edu/records/nc5b2-d7936'
+          link: 'https://authors.library.caltech.edu/records/nc5b2-d7936',
+          section: 'fr-timeline'
         },
         {
           numbers: '[29]',
           text: 'Fleischmann & Pons (1990) - Calorimetry of the Pd-D-D2O system',
-          link: 'https://lenr-canr.org/acrobat/Fleischmancalorimetr.pdf'
+          link: 'https://lenr-canr.org/acrobat/Fleischmancalorimetr.pdf',
+          section: 'fr-timeline'
         },
         {
           numbers: '[32]',
           text: 'Pons & Fleischmann - Heat after Death',
-          link: 'https://lenr-canr.org/acrobat/PonsSheatafterd.pdf'
+          link: 'https://lenr-canr.org/acrobat/PonsSheatafterd.pdf',
+          section: 'fr-timeline'
         }
       ]
     },
@@ -53,12 +59,14 @@ const References = () => {
         {
           numbers: '[4][9][11][12][14][16][17][20][37][47][51][65][68][71][72][74][76]',
           text: 'DOE ERAB (1989) - Cold Fusion Research Report',
-          link: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Cold_Fusion_Research_-_ERAB_-_1989.pdf'
+          link: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Cold_Fusion_Research_-_ERAB_-_1989.pdf',
+          section: 'fr-evidence'
         },
         {
           numbers: '[2][10][18][21][28][33][50][62][81][82][86]',
           text: 'DOE 2004 Review of Low Energy Nuclear Reactions',
-          link: 'https://www.lenr-canr.org/acrobat/DOEreportofth.pdf'
+          link: 'https://www.lenr-canr.org/acrobat/DOEreportofth.pdf',
+          section: 'fr-evidence'
         }
       ]
     },
@@ -68,27 +76,32 @@ const References = () => {
         {
           numbers: '[5][13][31][38][64][66][78]',
           text: 'McKubre - Excess Power in Electrochemical Studies',
-          link: 'https://lenr-canr.org/acrobat/McKubreMCHexcesspowe.pdf'
+          link: 'https://lenr-canr.org/acrobat/McKubreMCHexcesspowe.pdf',
+          section: 'fr-evidence'
         },
         {
           numbers: '[35][58][59]',
           text: 'Berlinguette et al. (2019) - Revisiting the cold case of cold fusion',
-          link: 'https://research.google/pubs/revisiting-the-cold-case-of-cold-fusion/'
+          link: 'https://research.google/pubs/revisiting-the-cold-case-of-cold-fusion/',
+          section: 'fr-evidence'
         },
         {
           numbers: '[36][60]',
           text: 'Mizuno & Rothwell (2019) - Excess Heat from Palladium Deposited on Nickel',
-          link: 'https://jcmns.scholasticahq.com/article/72489.pdf'
+          link: 'https://jcmns.scholasticahq.com/article/72489.pdf',
+          section: 'fr-evidence'
         },
         {
           numbers: '[41]',
           text: 'Miles - Anomalous effects in deuterated systems',
-          link: 'https://lenr-canr.org/acrobat/MilesManomalousea.pdf'
+          link: 'https://lenr-canr.org/acrobat/MilesManomalousea.pdf',
+          section: 'fr-evidence'
         },
         {
           numbers: '[44]',
           text: 'Focardi et al. (1998) - Large excess heat production in Ni-H systems',
-          link: 'https://newenergytimes.com/v2/library/1998/1998FocardiS-LargeExcessHeatProductionNiH.pdf'
+          link: 'https://newenergytimes.com/v2/library/1998/1998FocardiS-LargeExcessHeatProductionNiH.pdf',
+          section: 'fr-evidence'
         }
       ]
     },
@@ -98,37 +111,44 @@ const References = () => {
         {
           numbers: '[7][8][63][73]',
           text: 'Chen et al. (2025) - Electrochemical loading enhances deuterium fusion rates',
-          link: 'https://www.nature.com/articles/s41586-025-09042-7'
+          link: 'https://www.nature.com/articles/s41586-025-09042-7',
+          section: 'fr-evidence'
         },
         {
           numbers: '[39][77]',
           text: 'Packham et al. - Production of tritium from D2O electrolysis',
-          link: 'https://www.lenr-canr.org/acrobat/PackhamNJCproduction.pdf'
+          link: 'https://www.lenr-canr.org/acrobat/PackhamNJCproduction.pdf',
+          section: 'fr-evidence'
         },
         {
           numbers: '[40][75]',
           text: 'Gozzi et al. - X-ray, heat excess and 4He in the D/Pd system',
-          link: 'https://www.lenr-canr.org/acrobat/GozziDxrayheatex.pdf'
+          link: 'https://www.lenr-canr.org/acrobat/GozziDxrayheatex.pdf',
+          section: 'fr-evidence'
         },
         {
           numbers: '[42]',
           text: 'Mosier-Boss et al. (2009) - Triple tracks in CR-39',
-          link: 'https://pubmed.ncbi.nlm.nih.gov/18828003/'
+          link: 'https://pubmed.ncbi.nlm.nih.gov/18828003/',
+          section: 'fr-evidence'
         },
         {
           numbers: '[43][80]',
           text: 'Iwamura et al. - Observation of nuclear transmutation reactions',
-          link: 'https://lenr-canr.org/acrobat/IwamuraYobservatiob.pdf'
+          link: 'https://lenr-canr.org/acrobat/IwamuraYobservatiob.pdf',
+          section: 'fr-evidence'
         },
         {
           numbers: '[79]',
           text: 'Interpreting CR-39 Detectors Used in Pd/D Co-deposition',
-          link: 'https://jcmns.org/article/72567-interpreting-cr-39-detectors-used-in-pd-d-co-deposition-nuclear-generated-tracks-or-artifacts.pdf'
+          link: 'https://jcmns.org/article/72567-interpreting-cr-39-detectors-used-in-pd-d-co-deposition-nuclear-generated-tracks-or-artifacts.pdf',
+          section: 'fr-evidence'
         },
         {
           numbers: '[85]',
           text: 'MHI Technology Review - Transmutation reactions',
-          link: 'https://www.mhi.com/technology/review/sites/g/files/jwhtju2326/files/media/pdf/e524106.pdf'
+          link: 'https://www.mhi.com/technology/review/sites/g/files/jwhtju2326/files/media/pdf/e524106.pdf',
+          section: 'fr-evidence'
         }
       ]
     },
@@ -138,47 +158,56 @@ const References = () => {
         {
           numbers: '[3][34]',
           text: 'Storms (2010) - Status of cold fusion',
-          link: 'https://lenr-canr.org/acrobat/StormsEstatusofcoa.pdf'
+          link: 'https://lenr-canr.org/acrobat/StormsEstatusofcoa.pdf',
+          section: 'fr-mechanisms'
         },
         {
           numbers: '[6][23][25][27][45][46][84]',
           text: 'Storms (2007) - The Science of Low Energy Nuclear Reaction',
-          link: 'https://pubmed.ncbi.nlm.nih.gov/17748706/'
+          link: 'https://pubmed.ncbi.nlm.nih.gov/17748706/',
+          section: 'fr-mechanisms'
         },
         {
           numbers: '[49]',
           text: 'Widom & Larsen (2008) - Ultra low momentum neutron catalyzed nuclear reactions',
-          link: 'https://ar5iv.org/pdf/0805.4538'
+          link: 'https://ar5iv.org/pdf/0805.4538',
+          section: 'fr-mechanisms'
         },
         {
           numbers: '[52]',
           text: 'Hagelstein et al. (2014) - Current status of the theory and modeling effort',
-          link: 'https://dspace.mit.edu/bitstream/handle/1721.1/103344/11012_2014_9988_ReferencePDF.pdf'
+          link: 'https://dspace.mit.edu/bitstream/handle/1721.1/103344/11012_2014_9988_ReferencePDF.pdf',
+          section: 'fr-mechanisms'
         },
         {
           numbers: '[53]',
           text: 'Takahashi - Physics of Cold Fusion by TSC Theory',
-          link: 'https://jcmns.org/api/v1/articles/72286-physics-of-cold-fusion-by-tsc-theory.pdf'
+          link: 'https://jcmns.org/api/v1/articles/72286-physics-of-cold-fusion-by-tsc-theory.pdf',
+          section: 'fr-mechanisms'
         },
         {
           numbers: '[54]',
           text: 'Fleischmann - Possible theories of cold fusion',
-          link: 'https://www.lenr-canr.org/acrobat/Fleischmanpossibleth.pdf'
+          link: 'https://www.lenr-canr.org/acrobat/Fleischmanpossibleth.pdf',
+          section: 'fr-mechanisms'
         },
         {
           numbers: '[55]',
           text: 'Krivit (2024) - Recent developments in LENR research',
-          link: 'https://arxiv.org/pdf/2406.11550'
+          link: 'https://arxiv.org/pdf/2406.11550',
+          section: 'fr-mechanisms'
         },
         {
           numbers: '[56]',
           text: 'Kalman & Keszthelyi (2009) - Nuclear processes in solids',
-          link: 'https://link.springer.com/article/10.1007/s00016-009-0006-9'
+          link: 'https://link.springer.com/article/10.1007/s00016-009-0006-9',
+          section: 'fr-mechanisms'
         },
         {
           numbers: '[57][61]',
           text: 'Nature News (2019) - Revisiting cold fusion',
-          link: 'https://www.nature.com/articles/d41586-019-01675-9'
+          link: 'https://www.nature.com/articles/d41586-019-01675-9',
+          section: 'fr-mechanisms'
         }
       ]
     },
@@ -188,12 +217,14 @@ const References = () => {
         {
           numbers: '[19][69]',
           text: 'NRC (2026) - Vision and Strategy: Regulating Fusion Machines',
-          link: 'https://adamswebsearch2.nrc.gov/webSearch2/main.jsp?AccessionNumber=ML25344A070'
+          link: 'https://adamswebsearch2.nrc.gov/webSearch2/main.jsp?AccessionNumber=ML25344A070',
+          section: 'fr-safety'
         },
         {
           numbers: '[70]',
           text: 'IAEA - Towards a global regulatory approach for fusion safety',
-          link: 'https://www.iaea.org/resources/member-states-side-events/towards-a-global-regulatory-approach-for-fusion-safety-and-security'
+          link: 'https://www.iaea.org/resources/member-states-side-events/towards-a-global-regulatory-approach-for-fusion-safety-and-security',
+          section: 'fr-safety'
         }
       ]
     }
@@ -220,7 +251,9 @@ const References = () => {
           </h3>
           {category.references.map((ref, index) => (
             <div key={index} className="reference">
-              <span className="ref-number">{ref.numbers}</span>
+              <Link to={`/full-research#${ref.section || 'fr-references'}`} className="ref-number ref-number-link">
+                {ref.numbers}
+              </Link>
               <span className="ref-text">{ref.text}</span>
               <a 
                 href={ref.link} 

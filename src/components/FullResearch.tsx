@@ -1,9 +1,20 @@
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 import { useLanguage } from '../LanguageContext'
 import './FullResearch.css'
 
 const FullResearch = () => {
   const { t } = useLanguage()
+
+  useEffect(() => {
+    const hash = window.location.hash
+    if (hash) {
+      setTimeout(() => {
+        const el = document.querySelector(hash)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
+  }, [])
 
   return (
     <div className="full-research">
@@ -16,7 +27,7 @@ const FullResearch = () => {
       <article className="full-research-content">
         <h1>Cold Fusion and LENR: What We Know and What We Can Expect</h1>
         
-        <h2>Executive Summary</h2>
+        <h2 id="fr-executive-summary">Executive Summary</h2>
         <p>"Cold fusion" broadly refers to claims that nuclear-scale energy (and sometimes nuclear products) can be produced in tabletop systems—most famously, when deuterium is loaded into metals such as palladium during electrolysis—without the extreme temperatures and plasmas required for conventional fusion. The modern umbrella term low-energy nuclear reactions (LENR) is often used to include related claims in palladium–deuterium systems and also nickel–hydrogen/deuterium systems, transmutation reports, and various plasma/glow-discharge variants.</p>
 
         <p>Across nearly four decades, the central scientific situation remains unchanged in one crucial respect: there is no generally accepted, independently reproducible demonstration of cold fusion that simultaneously satisfies (a) robust calorimetry, (b) commensurate nuclear "ash"/radiation signatures, and (c) an interpretation consistent with established nuclear physics. This is the core conclusion of major reviews by the U.S. Department of Energy (1989 and 2004), and it remains aligned with subsequent high-rigor reassessments (notably a multi-institution program reported in Nature in 2019) that "have yet to yield any evidence of such an effect."</p>
@@ -39,7 +50,7 @@ const FullResearch = () => {
           <li>Can independent labs reproduce the same effect using exchanged materials and identical protocols—the cornerstone recommended already in 1989?</li>
         </ol>
 
-        <h2>Scope, definitions, and assumptions</h2>
+        <h2 id="fr-scope">Scope, definitions, and assumptions</h2>
         <p>This report covers (a) the classical palladium–deuterium electrolytic claims launched in 1989, (b) broader LENR claims including nickel–hydrogen/deuterium heat reports and transmutation/isotopic-shift claims, (c) replication history, (d) evidence categories (heat, neutrons, tritium, helium, isotopic shifts), (e) theoretical proposals and critiques, (f) official positions and modern developments, and (g) engineering, safety/regulation, and economics if viable.</p>
 
         <h3>Assumptions (explicit because they materially affect conclusions):</h3>
@@ -50,7 +61,7 @@ const FullResearch = () => {
           <li>Regulatory discussion uses fusion regulation frameworks as an imperfect proxy, because there is no dedicated "cold fusion" licensing regime; if devices produce neutrons/tritium/activation, they likely fall into radiological controls broadly similar to emerging fusion oversight (hazard-based).</li>
         </ul>
 
-        <h2>Historical timeline and key experiments</h2>
+        <h2 id="fr-timeline">Historical timeline and key experiments</h2>
         <p>Cold fusion history is unusually well-documented because the 1989 announcement triggered rapid global replication attempts and formal government review within months. The timeline below focuses on events that changed the evidentiary landscape or institutional stance.</p>
 
         <h3>Timeline table of key events, claims, and outcomes</h3>
@@ -155,7 +166,7 @@ const FullResearch = () => {
           </div>
         </div>
 
-        <h2>Evidence base and reproducibility</h2>
+        <h2 id="fr-evidence">Evidence base and reproducibility</h2>
         <p>Cold fusion claims typically rest on one (or more) of four evidence types:</p>
         <ol>
           <li>Excess heat (calorimetry).</li>
@@ -232,7 +243,7 @@ const FullResearch = () => {
 
         <p>Measurement at the "parts-per-billion frontier" invites false positives unless protocols are extreme. Helium-4 correlation claims often rest on very low concentrations, where leaks, atmospheric background, and sampling bias become dominant unless strict chain-of-custody and blanks are enforced. Similar issues occur for near-background neutron detection and for surface elemental analysis in transmutation reports.</p>
 
-        <h2>Mechanisms, models, and critiques</h2>
+        <h2 id="fr-mechanisms">Mechanisms, models, and critiques</h2>
         <p>Any theory must confront a hard constraint: known nuclear reaction rates at room-temperature energies are vanishingly small for charged-particle fusion because of the Coulomb barrier, and known D–D fusion has well-characterized branching and high-energy products (neutrons/protons/gammas) that are not observed at the levels implied by watt-scale heat claims. The 2004 DOE review explicitly notes that the conventional D–D channel producing helium-4 plus a high-energy gamma is extremely rare (~1 in 10⁷ in standard measurements), and reviewers raised serious concerns about claims that cold fusion would instead channel ~24 MeV directly to lattice heat without the expected gammas.</p>
 
         <p>Within that constraint landscape, the main theoretical families are:</p>
@@ -260,7 +271,7 @@ const FullResearch = () => {
         <h3>The simplest critique that keeps surviving</h3>
         <p>Both DOE reviews converge on a critical evidentiary mismatch: when heat is reported at levels far beyond chemistry, expected nuclear products are not found at commensurate levels, and in many cases the effects are not repeatable or not adequately documented for independent verification. This mismatch is the central reason mainstream nuclear physics does not treat cold fusion as established.</p>
 
-        <h2>Consensus, recent developments, and outlook for technology</h2>
+        <h2 id="fr-consensus">Consensus, recent developments, and outlook for technology</h2>
 
         <h3>Mainstream scientific consensus and official positions</h3>
         <p>The 1989 ERAB report concluded the evidence for a new nuclear process was "not persuasive," found that heat claims lacked commensurate fusion products, and recommended against special cold-fusion programs while supporting modest, carefully focused work within normal peer review—with emphasis on closed-system calorimetry and simultaneous product monitoring.</p>
@@ -309,7 +320,7 @@ const FullResearch = () => {
           <li><strong>Waste/activation uncertainties:</strong> Even low neutron fluxes can activate materials over time; if tritium is produced, containment and monitoring become central.</li>
         </ol>
 
-        <h2>Safety, regulation, and economic implications if viable</h2>
+        <h2 id="fr-safety">Safety, regulation, and economic implications if viable</h2>
         <p>If a cold-fusion/LENR device truly produced nuclear reactions (neutrons, tritium, activation products), regulation would likely follow the emerging hazard-based fusion regulatory approach: licensing of radioactive byproduct materials, radiation protection, and facility controls proportionate to hazard. For context, the U.S. NRC has articulated strategies for regulating fusion machines and has worked within existing "byproduct material" frameworks. Internationally, the IAEA has actively convened work on fusion safety and regulation dialogue, reflecting that even mainstream fusion requires coordinated safety frameworks.</p>
 
         <p>Economically, a genuine net-energy LENR heat source (especially if cheap and compact) would:</p>
@@ -320,7 +331,7 @@ const FullResearch = () => {
         </ul>
         <p><strong>Confidence:</strong> Low because viability is unproven; the economic analysis is therefore conditional.</p>
 
-        <h2>Recommended experiments, protocols, and decision points</h2>
+        <h2 id="fr-experiments">Recommended experiments, protocols, and decision points</h2>
         <p>The DOE's repeated recommendation, separated by 15 years, can be summarized bluntly: stop arguing over anecdotes and run decisive experiments. Below is a practical, controversy-resolving protocol stack designed to answer the highest-leverage questions with minimal wiggle room.</p>
 
         <h3>Protocol principles (what "decisive" must mean here)</h3>
@@ -346,7 +357,7 @@ const FullResearch = () => {
           <li><strong>Meaningful upside possibility (Low confidence):</strong> A narrow, previously uncontrolled materials regime yields reproducible heat + commensurate ash under audit. If that happens, it becomes a new field overnight—and the jokes will write themselves, but the calorimeters will still have to do the talking.</li>
         </ul>
 
-        <h2>References</h2>
+        <h2 id="fr-references">References</h2>
         <div className="references-section">
           <p><a href="https://lenr-canr.org/acrobat/Fleischmanelectroche.pdf" target="_blank" rel="noopener noreferrer">Fleischmann & Pons - Electrochemically induced nuclear fusion of deuterium</a></p>
           
