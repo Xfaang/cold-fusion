@@ -68,6 +68,13 @@ const EvidenceTable = () => {
       outcomeKey: 'exp8Outcome',
       confidence: 'high',
       paperUrl: 'https://www.nature.com/articles/s41586-025-09042-7'
+    },
+    {
+      titleKey: 'exp9Title',
+      measurementsKey: 'exp9Measurements',
+      outcomeKey: 'exp9Outcome',
+      confidence: 'high',
+      paperUrl: 'https://www.nature.com/articles/s41598-026-35722-z'
     }
   ]
 

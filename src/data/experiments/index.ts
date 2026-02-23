@@ -272,5 +272,30 @@ export const topTenExperiments: ExperimentDetail[] = [
       enhancement: '15_percent',
       reproducibility: 'consistent'
     }
+  },
+  {
+    id: 'bang-corels-2026',
+    titleKey: 'exp11DetailTitle',
+    authors: 'W. Bang et al. (CoReLS, Korea)',
+    year: 2026,
+    journalKey: 'exp11Journal',
+    paperUrl: 'https://www.nature.com/articles/s41598-026-35722-z',
+    confidence: 'high',
+    category: 'plasma',
+    objectiveKey: 'exp11Objective',
+    methodsKey: 'exp11Methods',
+    resultsKey: 'exp11Results',
+    replicationStatusKey: 'exp11Replication',
+    significanceKey: 'exp11Significance',
+    limitationsKey: 'exp11Limitations',
+    apparatus: ['ti_sapphire_laser', 'cd4_cluster_jet', 'cd2_target', 'neutron_tof_detectors', 'mcp_ion_detector'],
+    measurements: ['neutron_yield', 'ion_temperature', 'yield_enhancement_ratio'],
+    materials: ['deuterated_methane_cd4', 'deuterated_polyethylene_cd2', 'aluminum_foil_substrate'],
+    conditions: {
+      laser_intensity: '1.2 × 10^19 W/cm²',
+      pulse_duration: '25 fs',
+      ion_temperature: '60-100 keV',
+      enhancement: '2x-3.5x (55% coverage), up to 5.6x (full 4π)'
+    }
   }
 ]

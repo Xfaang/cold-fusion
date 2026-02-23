@@ -109,6 +109,10 @@ export const translations = {
     exp8Measurements: "Wydajność neutronów z Pd + ładowanie elektrochemiczne",
     exp8Outcome: "~15% zwiększenie szybkości neutronów",
     
+    exp9Title: "Bang i in. 2026 (CoReLS)",
+    exp9Measurements: "Fuzja laserowo-klastrowa DD + dodatkowy targ CD2",
+    exp9Outcome: "2-3.5x zwiększenie wydajności neutronów (do 5.6x przy pełnym pokryciu)",
+    
     // Detailed experiment documentation
     // Experiment 1: Fleischmann & Pons 1989
     exp1DetailTitle: "Fleischmann & Pons (1989) - Pierwsze Twierdzenie o Zimnej Fuzji",
@@ -209,6 +213,16 @@ export const translations = {
     exp10Replication: "Powtarzalne wyniki w kontrolowanych warunkach",
     exp10Significance: "Pierwszy jednoznacznie pozytywny wynik związany z ładowaniem w głównym czasopiśmie",
     exp10Limitations: "Niewielki efekt wzmocnienia, ograniczony do konfiguracji wiązka-cel",
+    
+    // Experiment 11: Bang et al. 2026
+    exp11DetailTitle: "Bang i in. (2026) - Zwiększenie Wydajności Fuzji przez Wtórne Reakcje Wiązka-Targ",
+    exp11Journal: "Nature Scientific Reports",
+    exp11Objective: "Eksperymentalna demonstracja wtórnych reakcji fuzji wiązka-targ w laserowo-klastrowych eksperymentach fuzji",
+    exp11Methods: "Laser petawatowy (25 fs) naświetlający klastry CD4, z dodatkowym targiem CD2 otaczającym plazmę fuzyjną",
+    exp11Results: "Zwiększenie wydajności neutronów 2-3.5x przy temperaturach jonów 60-100 keV; model teoretyczny zgodny z eksperymentem",
+    exp11Replication: "Pierwsza eksperymentalna demonstracja; wyniki zgodne z modelem teoretycznym",
+    exp11Significance: "Otwiera drogę do badania przekrojów czynnych fuzji w zakresie sub-100 keV, istotnym dla astrofizyki",
+    exp11Limitations: "Pojedynczy eksperyment; wymaga niezależnej replikacji; laser petawatowy ogranicza dostępność",
     
     // Models section
     modelsTitle: "Modele i Krytyka",
@@ -642,6 +656,10 @@ export const translations = {
     exp8Measurements: "Neutron yield with Pd + electrochemical loading",
     exp8Outcome: "~15% neutron-rate enhancement",
     
+    exp9Title: "Bang et al. 2026 (CoReLS)",
+    exp9Measurements: "Laser-cluster DD fusion + secondary CD2 beam-target",
+    exp9Outcome: "2-3.5x neutron yield enhancement (up to 5.6x with full coverage)",
+    
     // Detailed experiment documentation
     // Experiment 1: Fleischmann & Pons 1989
     exp1DetailTitle: "Fleischmann & Pons (1989) - Original Cold Fusion Claim",
@@ -742,6 +760,16 @@ export const translations = {
     exp10Replication: "Reproducible results under controlled conditions",
     exp10Significance: "First unambiguously positive loading-related result in major journal",
     exp10Limitations: "Small enhancement effect, limited to beam-target configuration",
+    
+    // Experiment 11: Bang et al. 2026
+    exp11DetailTitle: "Bang et al. (2026) - Fusion Yield Enhancement via Secondary Beam-Target Reactions",
+    exp11Journal: "Nature Scientific Reports",
+    exp11Objective: "Experimental demonstration of secondary beam-target fusion reactions in laser-cluster fusion experiments",
+    exp11Methods: "Petawatt laser (25 fs) irradiating CD4 clusters, with additional CD2 target surrounding the fusion plasma",
+    exp11Results: "Neutron yield enhancement of 2-3.5x at ion temperatures of 60-100 keV; theoretical model matches experiment",
+    exp11Replication: "First experimental demonstration; results consistent with theoretical predictions",
+    exp11Significance: "Opens path to studying fusion cross sections in the sub-100 keV regime relevant to astrophysics",
+    exp11Limitations: "Single experiment; requires independent replication; petawatt laser limits accessibility",
     
     // Models section
     modelsTitle: "Models and Critiques",
