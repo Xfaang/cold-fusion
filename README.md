@@ -47,7 +47,7 @@ A comprehensive, open-source research compilation on cold fusion and Low Energy 
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/cold-fusion.git
+git clone https://github.com/Xfaang/cold-fusion.git
 cd cold-fusion
 
 # Install dependencies
