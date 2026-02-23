@@ -46,7 +46,7 @@ const EvidenceTable = () => {
       measurementsKey: 'exp5Measurements',
       outcomeKey: 'exp5Outcome',
       confidence: 'medium',
-      paperUrl: 'https://lenr-canr.org/acrobat/McKubreMCHisothermalf.pdf'
+      paperUrl: 'https://doi.org/10.1007/BF02425494'
     },
     {
       titleKey: 'exp6Title',
@@ -94,35 +94,62 @@ const EvidenceTable = () => {
       <h2>{t('evidenceTitle')}</h2>
       <p>{t('evidenceIntro')}</p>
       
-      <ul className="no-bullets evidence-categories">
-        <li>
-          • {t('evidenceHeat')} <span className="confidence medium">{t('confidenceMedium')}</span>
-        </li>
-        <li>
-          • {t('evidenceNeutrons')} <span className="confidence medium">{t('confidenceMedium')}</span> 
-          <span className="text-gray" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>
-            {t('evidenceNeutronsNote')}
-          </span>
-        </li>
-        <li>
-          • {t('evidenceTritium')} <span className="confidence medium">{t('confidenceMedium')}</span> 
-          <span className="text-gray" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>
-            {t('evidenceTritiumReported')}
-          </span> / <span className="confidence low">{t('confidenceLow')}</span>
-          <span className="text-gray" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>
-            {t('evidenceTritiumNuclear')}
-          </span>
-        </li>
-        <li>
-          • {t('evidenceHelium')} <span className="confidence low">{t('confidenceLow')}-{t('confidenceMedium')}</span>
-        </li>
-        <li>
-          • {t('evidenceTracks')} <span className="confidence low">{t('confidenceLow')}-{t('confidenceMedium')}</span>
-        </li>
-        <li>
-          • {t('evidenceIsotopic')} <span className="confidence low">{t('confidenceLow')}</span>
-        </li>
-      </ul>
+      <div className="evidence-dual-confidence">
+        <table className="evidence-confidence-table">
+          <thead>
+            <tr>
+              <th>{t('evidenceCategoryHeader')}</th>
+              <th>{t('evidenceMeasurementHeader')}</th>
+              <th>{t('evidenceInterpretationHeader')}</th>
+              <th>{t('evidenceNoteHeader')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{t('evidenceHeat')}</td>
+              <td><span className="confidence medium">{t('confidenceMedium')}</span></td>
+              <td><span className="confidence low">{t('confidenceLow')}</span></td>
+              <td className="text-gray">{t('evidenceHeatNote')}</td>
+            </tr>
+            <tr>
+              <td>{t('evidenceNeutrons')}</td>
+              <td><span className="confidence low">{t('confidenceLow')}</span></td>
+              <td><span className="confidence low">{t('confidenceLow')}</span></td>
+              <td className="text-gray">{t('evidenceNeutronsInterpNote')}</td>
+            </tr>
+            <tr>
+              <td>{t('evidenceHelium')}</td>
+              <td><span className="confidence low">{t('confidenceLow')}</span></td>
+              <td><span className="confidence very-low">{t('confidenceVeryLow')}</span></td>
+              <td className="text-gray">{t('evidenceHeliumNote')}</td>
+            </tr>
+            <tr>
+              <td>{t('evidenceTritium')}</td>
+              <td><span className="confidence low">{t('confidenceLow')}</span></td>
+              <td><span className="confidence low">{t('confidenceLow')}</span></td>
+              <td className="text-gray">{t('evidenceTritiumNote')}</td>
+            </tr>
+            <tr>
+              <td>{t('evidenceTracks')}</td>
+              <td><span className="confidence low">{t('confidenceLow')}</span></td>
+              <td><span className="confidence very-low">{t('confidenceVeryLow')}</span></td>
+              <td className="text-gray">{t('evidenceTracksNote')}</td>
+            </tr>
+            <tr>
+              <td>{t('evidenceIsotopic')}</td>
+              <td><span className="confidence very-low">{t('confidenceVeryLow')}</span></td>
+              <td><span className="confidence very-low">{t('confidenceVeryLow')}</span></td>
+              <td className="text-gray">{t('evidenceIsotopicNote')}</td>
+            </tr>
+            <tr>
+              <td>{t('evidenceBeamTarget')}</td>
+              <td><span className="confidence high">{t('confidenceHigh')}</span></td>
+              <td><span className="confidence high">{t('confidenceHigh')}</span></td>
+              <td className="text-gray">{t('evidenceBeamTargetNote')}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <h3 id="key-experiments">{t('evidenceKeyExperiments')}</h3>
       <div className="experiments-grid">

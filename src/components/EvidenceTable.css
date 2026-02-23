@@ -96,3 +96,39 @@
     font-size: 0.9rem;
   }
 }
+
+.evidence-dual-confidence {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.evidence-confidence-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.evidence-confidence-table th,
+.evidence-confidence-table td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.evidence-confidence-table th {
+  font-weight: 600;
+  color: var(--text-secondary, #aaa);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.evidence-confidence-table td:nth-child(2),
+.evidence-confidence-table td:nth-child(3) {
+  white-space: nowrap;
+}
+
+.evidence-confidence-table .text-gray {
+  font-size: 0.85rem;
+  max-width: 300px;
+}

@@ -1,0 +1,47 @@
+.status-summary {
+  margin: 2rem 0;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.status-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.status-card.established {
+  border-left: 4px solid #4caf50;
+  background: rgba(76, 175, 80, 0.05);
+}
+
+.status-card.contested {
+  border-left: 4px solid #ff9800;
+  background: rgba(255, 152, 0, 0.05);
+}
+
+.status-card.decisive {
+  border-left: 4px solid #2196f3;
+  background: rgba(33, 150, 243, 0.05);
+}
+
+.status-card h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+}
+
+.status-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.status-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}

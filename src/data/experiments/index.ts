@@ -131,7 +131,7 @@ export const topTenExperiments: ExperimentDetail[] = [
     authors: 'M.C.H. McKubre, S. Crouch-Baker, A.M. Riley, S.I. Smedley, F.L. Tanzella',
     year: 1992,
     journalKey: 'exp5Journal',
-    paperUrl: 'https://lenr-canr.org/acrobat/McKubreMCHisothermalf.pdf',
+    paperUrl: 'https://doi.org/10.1007/BF02425494',
     confidence: 'medium',
     category: 'electrochemical',
     objectiveKey: 'exp5Objective',

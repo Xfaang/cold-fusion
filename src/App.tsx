@@ -5,6 +5,7 @@ import LanguageToggle from './components/LanguageToggle'
 import Sidebar from './components/Sidebar'
 import Hero from './components/Hero'
 import Introduction from './components/Introduction'
+import StatusSummary from './components/StatusSummary'
 import Timeline from './components/Timeline'
 import Reproducibility from './components/Reproducibility'
 import EvidenceTable from './components/EvidenceTable'
@@ -25,6 +26,7 @@ const MainPage = () => (
     <main className="main-content">
       <Hero />
       <Introduction />
+      <StatusSummary />
       <Timeline />
       <Reproducibility />
       <EvidenceTable />
