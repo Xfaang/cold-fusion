@@ -123,12 +123,20 @@
   letter-spacing: 0.05em;
 }
 
-.evidence-confidence-table td:nth-child(2),
-.evidence-confidence-table td:nth-child(3) {
-  white-space: nowrap;
-}
-
 .evidence-confidence-table .text-gray {
   font-size: 0.85rem;
   max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .evidence-confidence-table {
+    font-size: 0.8rem;
+  }
+  .evidence-confidence-table th,
+  .evidence-confidence-table td {
+    padding: 0.4rem 0.5rem;
+  }
+  .evidence-confidence-table .text-gray {
+    max-width: 150px;
+  }
 }
